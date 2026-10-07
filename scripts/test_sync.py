@@ -37,6 +37,14 @@ class ExportTests(unittest.TestCase):
                 ET.SubElement(r, sync.W + "t").text = text
             with zipfile.ZipFile(journal, "w") as archive:
                 archive.writestr("word/document.xml", ET.tostring(document))
+            filtered = root / "filtered"
+            filtered.mkdir()
+            with patch.object(sync, "ROOT", filtered), contextlib.redirect_stdout(io.StringIO()):
+                sync.export(ledger, journal, "check", since="2026-10-02")
+                snapshot = json.loads((filtered / "data/progress.json").read_text())
+                self.assertEqual([record["slug"] for record in snapshot["assignments"]], ["second"])
+                self.assertFalse((filtered / "solutions/0001-first").exists())
+                self.assertFalse((filtered / "questions/2026-10-01-first.md").exists())
             with patch.object(sync, "ROOT", public), contextlib.redirect_stdout(io.StringIO()):
                 sync.export(ledger, journal, "check")
                 snapshot = json.loads((public / "data/progress.json").read_text())

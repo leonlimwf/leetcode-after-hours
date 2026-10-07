@@ -6,7 +6,7 @@ Topics: Linked List / Recursion
 
 [Open on LeetCode](https://leetcode.com/problems/reverse-linked-list/)
 
-Status: **In Progress**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

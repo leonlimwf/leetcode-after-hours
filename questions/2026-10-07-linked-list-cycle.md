@@ -6,7 +6,7 @@ Topics: Linked List / Two Pointers
 
 [Open on LeetCode](https://leetcode.com/problems/linked-list-cycle/)
 
-Status: **In Progress**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

@@ -5,8 +5,8 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](questions/2026-10-08-evaluate-reverse-polish-notation.md) | Medium | Array, Math, Stack | Accepted |
-| 2026-10-07 | 141 | [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) | Easy | Linked List, Two Pointers | In Progress |
-| 2026-10-06 | 206 | [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) | Easy | Linked List, Recursion | In Progress |
+| 2026-10-07 | 141 | [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) | Easy | Linked List, Two Pointers | Profile Accepted · pending confirmation |
+| 2026-10-06 | 206 | [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) | Easy | Linked List, Recursion | Profile Accepted · pending confirmation |
 | 2026-10-05 | 102 | [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) | Medium | Tree, Breadth-First Search, Binary Tree | Missed |
 | 2026-10-04 | 235 | [Lowest Common Ancestor of a Binary Search Tree](questions/2026-10-04-lowest-common-ancestor-of-a-binary-search-tree.md) | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | Accepted |
 | 2026-10-03 | 110 | [Balanced Binary Tree](questions/2026-10-03-balanced-binary-tree.md) | Easy | Tree, Depth-First Search, Binary Tree | Accepted |

@@ -105,6 +105,10 @@ def export(ledger_path, journal_path, phase, since=None):
     slugs = set()
     for assignment in assignments:
         slug = assignment["slug"]
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", assignment["date"]):
+            raise ValueError("Invalid assignment date.")
+        if not isinstance(assignment["leetcode_number"], int) or assignment["leetcode_number"] <= 0:
+            raise ValueError("Invalid LeetCode problem number.")
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug) or slug in slugs:
             raise ValueError("Unsafe or duplicate slug: " + slug)
         slugs.add(slug)
@@ -189,7 +193,7 @@ def git(*args):
 def prepare_publish():
     if Path(git("rev-parse", "--show-toplevel")).resolve() != ROOT:
         raise ValueError("Expected a dedicated repository checkout.")
-    if git("remote", "get-url", "origin") not in {EXPECTED_REMOTE, "git@github.com:leonlimwf/leetcode-after-hours.git"}:
+    if git("remote", "get-url", "origin") != EXPECTED_REMOTE:
         raise ValueError("Unexpected origin; refusing to publish.")
     if git("branch", "--show-current") != "main":
         raise ValueError("Publishing is supported only on main.")
@@ -219,7 +223,7 @@ def main():
         export(args.ledger, args.journal, args.phase, args.since)
         subprocess.run([sys.executable, str(ROOT / "scripts/validate.py")], check=True)
         if args.publish:
-            git("add", "--", *PUBLIC_PATHS)
+            git("add", "--", *(path for path in PUBLIC_PATHS if (ROOT / path).exists()))
             if git("diff", "--cached", "--name-only"):
                 records = json.loads((ROOT / "data/progress.json").read_text(encoding="utf-8"))["assignments"]
                 date = records[-1]["date"] if records else "setup"

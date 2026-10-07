@@ -1,6 +1,437 @@
 {
   "version": 1,
+  "owner": "leonlimwf",
   "timezone": "Asia/Singapore",
-  "public_log_started_on": "2026-10-08",
-  "assignments": []
+  "started_on": "2026-09-16",
+  "completion_rule": "Count a problem as accepted only after the user confirms a successful submission.",
+  "assignments": [
+    {
+      "date": "2026-09-16",
+      "number": 1,
+      "title": "Two Sum",
+      "leetcode_number": 1,
+      "slug": "two-sum",
+      "difficulty": "Easy",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-16",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/two-sum/",
+      "question_path": "questions/2026-09-16-two-sum.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0001-two-sum/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-17",
+      "number": 2,
+      "title": "Valid Parentheses",
+      "leetcode_number": 20,
+      "slug": "valid-parentheses",
+      "difficulty": "Easy",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-17",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/valid-parentheses/",
+      "question_path": "questions/2026-09-17-valid-parentheses.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0020-valid-parentheses/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-18",
+      "number": 3,
+      "title": "Best Time to Buy and Sell Stock",
+      "leetcode_number": 121,
+      "slug": "best-time-to-buy-and-sell-stock",
+      "difficulty": "Easy",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-18",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "question_path": "questions/2026-09-18-best-time-to-buy-and-sell-stock.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0121-best-time-to-buy-and-sell-stock/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-19",
+      "number": 4,
+      "title": "Valid Palindrome",
+      "leetcode_number": 125,
+      "slug": "valid-palindrome",
+      "difficulty": "Easy",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-19",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/valid-palindrome/",
+      "question_path": "questions/2026-09-19-valid-palindrome.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0125-valid-palindrome/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-20",
+      "number": 5,
+      "title": "Valid Anagram",
+      "leetcode_number": 242,
+      "slug": "valid-anagram",
+      "difficulty": "Easy",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-20",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/valid-anagram/",
+      "question_path": "questions/2026-09-20-valid-anagram.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0242-valid-anagram/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-21",
+      "number": 6,
+      "title": "Binary Search",
+      "leetcode_number": 704,
+      "slug": "binary-search",
+      "difficulty": "Easy",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-21",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/binary-search/",
+      "question_path": "questions/2026-09-21-binary-search.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0704-binary-search/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-22",
+      "number": 7,
+      "title": "Contains Duplicate",
+      "leetcode_number": 217,
+      "slug": "contains-duplicate",
+      "difficulty": "Easy",
+      "topics": [
+        "Hash Table",
+        "Array"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-22",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/contains-duplicate/",
+      "question_path": "questions/2026-09-22-contains-duplicate.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0217-contains-duplicate/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-23",
+      "number": 8,
+      "title": "Longest Substring Without Repeating Characters",
+      "leetcode_number": 3,
+      "slug": "longest-substring-without-repeating-characters",
+      "difficulty": "Medium",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-23",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "question_path": "questions/2026-09-23-longest-substring-without-repeating-characters.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0003-longest-substring-without-repeating-characters/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "number": 9,
+      "title": "Group Anagrams",
+      "leetcode_number": 49,
+      "slug": "group-anagrams",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-24",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/group-anagrams/",
+      "question_path": "questions/2026-09-24-group-anagrams.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0049-group-anagrams/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-25",
+      "number": 10,
+      "title": "Top K Frequent Elements",
+      "leetcode_number": 347,
+      "slug": "top-k-frequent-elements",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Heap",
+        "Sorting"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-27",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "question_path": "questions/2026-09-25-top-k-frequent-elements.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0347-top-k-frequent-elements/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-26",
+      "number": 11,
+      "title": "Product of Array Except Self",
+      "leetcode_number": 238,
+      "slug": "product-of-array-except-self",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-30",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/product-of-array-except-self/",
+      "question_path": "questions/2026-09-26-product-of-array-except-self.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0238-product-of-array-except-self/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-27",
+      "number": 12,
+      "title": "Maximum Subarray",
+      "leetcode_number": 53,
+      "slug": "maximum-subarray",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-27",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/maximum-subarray/",
+      "question_path": "questions/2026-09-27-maximum-subarray.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0053-maximum-subarray/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-28",
+      "number": 13,
+      "title": "Merge Two Sorted Lists",
+      "leetcode_number": 21,
+      "slug": "merge-two-sorted-lists",
+      "difficulty": "Easy",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-30",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "question_path": "questions/2026-09-28-merge-two-sorted-lists.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0021-merge-two-sorted-lists/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-09-30",
+      "number": 14,
+      "title": "Invert Binary Tree",
+      "leetcode_number": 226,
+      "slug": "invert-binary-tree",
+      "difficulty": "Easy",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-30",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/invert-binary-tree/",
+      "question_path": "questions/2026-09-30-invert-binary-tree.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0226-invert-binary-tree/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "number": 15,
+      "title": "Maximum Depth of Binary Tree",
+      "leetcode_number": 104,
+      "slug": "maximum-depth-of-binary-tree",
+      "difficulty": "Easy",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-01",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "question_path": "questions/2026-10-01-maximum-depth-of-binary-tree.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0104-maximum-depth-of-binary-tree/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-03",
+      "number": 16,
+      "title": "Balanced Binary Tree",
+      "leetcode_number": 110,
+      "slug": "balanced-binary-tree",
+      "difficulty": "Easy",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-03",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/balanced-binary-tree/",
+      "question_path": "questions/2026-10-03-balanced-binary-tree.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0110-balanced-binary-tree/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-04",
+      "number": 17,
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "leetcode_number": 235,
+      "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "difficulty": "Medium",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-04",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "question_path": "questions/2026-10-04-lowest-common-ancestor-of-a-binary-search-tree.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0235-lowest-common-ancestor-of-a-binary-search-tree/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-05",
+      "number": 18,
+      "title": "Binary Tree Level Order Traversal",
+      "leetcode_number": 102,
+      "slug": "binary-tree-level-order-traversal",
+      "difficulty": "Medium",
+      "topics": [
+        "Tree",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "status": "missed",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "question_path": "questions/2026-10-05-binary-tree-level-order-traversal.md",
+      "code_available": false,
+      "complexity_available": false
+    },
+    {
+      "date": "2026-10-06",
+      "number": 19,
+      "title": "Reverse Linked List",
+      "leetcode_number": 206,
+      "slug": "reverse-linked-list",
+      "difficulty": "Easy",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "status": "in_progress",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/reverse-linked-list/",
+      "question_path": "questions/2026-10-06-reverse-linked-list.md",
+      "code_available": false,
+      "complexity_available": false
+    },
+    {
+      "date": "2026-10-07",
+      "number": 20,
+      "title": "Linked List Cycle",
+      "leetcode_number": 141,
+      "slug": "linked-list-cycle",
+      "difficulty": "Easy",
+      "topics": [
+        "Linked List",
+        "Two Pointers"
+      ],
+      "status": "in_progress",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/linked-list-cycle/",
+      "question_path": "questions/2026-10-07-linked-list-cycle.md",
+      "code_available": false,
+      "complexity_available": false
+    },
+    {
+      "date": "2026-10-08",
+      "number": 21,
+      "title": "Evaluate Reverse Polish Notation",
+      "leetcode_number": 150,
+      "slug": "evaluate-reverse-polish-notation",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Math",
+        "Stack"
+      ],
+      "status": "assigned",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+      "question_path": "questions/2026-10-08-evaluate-reverse-polish-notation.md",
+      "code_available": false,
+      "complexity_available": false
+    }
+  ]
 }

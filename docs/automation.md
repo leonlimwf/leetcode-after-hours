@@ -9,7 +9,7 @@ The ChatGPT/Codex local task is the scheduler. It chooses and records questions 
 1. Convert the heartbeat timestamp to Singapore time and resolve the intended date.
 2. Reuse an existing assignment for that date. Otherwise randomly select one suitable new Easy or Medium problem, excluding every previously assigned, skipped, accepted, or observed solved slug.
 3. Save the brief in the private journal and ledger; render-check journal changes and record the immutable midnight baseline.
-4. Run `python3 scripts/sync.py --phase midnight --since 2026-10-08 --ledger /path/to/ledger.json --journal /path/to/journal.docx --publish` from this repository.
+4. Run `python3 scripts/sync.py --phase midnight --since 2026-09-16 --ledger /path/to/ledger.json --journal /path/to/journal.docx --publish` from this repository.
 5. Notify the learner with the question, whether publishing succeeds or fails.
 
 ## 5am
@@ -18,16 +18,17 @@ The ChatGPT/Codex local task is the scheduler. It chooses and records questions 
 2. Inspect the assigned problem's actual code, even if already Accepted, and add or update the journal's Complexity Analysis block. Report no code when appropriate.
 3. Check the live LeetCode profile before marking an unchanged entry missed. Keep profile acceptance separate from learner-confirmed acceptance.
 4. Synchronize the journal tracker and ledger, preserving previously confirmed Accepted status.
-5. Run `python3 scripts/sync.py --phase check --since 2026-10-08 --ledger /path/to/ledger.json --journal /path/to/journal.docx --publish`.
+5. Run `python3 scripts/sync.py --phase check --since 2026-09-16 --ledger /path/to/ledger.json --journal /path/to/journal.docx --publish`.
 6. Report completion, complexity-analysis outcome, and GitHub publishing outcome separately.
 
 The publisher does not determine Big-O, choose questions, confirm acceptance, or change the private journal or ledger. Those are the coach's responsibilities. It exports existing records, copies confirmed code without changing its algorithm, and reports missing analysis explicitly. A single leading space on a top-level `class` or `def` copied from Word is removed for Python syntax; internal indentation is preserved.
 
-The public log starts on 8 October 2026. Always use `--since 2026-10-08` unless the learner explicitly approves importing earlier history. Repository setup includes no private journal-derived code or progress records.
+The learner approved publishing the existing solution archives and completion history on 8 October 2026. Always use `--since 2026-09-16` to retain that approved history alongside new assignments. Only the small allowlisted export is public; the source journal and full ledger remain local.
 
 ## Publishing safeguards
 
 - Only this repository's allowlisted public paths are staged. Private source files are never copied.
+- Every sync scans those paths for likely tokens, private keys, credentials in URLs, email addresses, local home/attachment paths, private filenames, unexpected file types, and symlinks. A match stops publishing without printing the matching value. Pattern checks supplement review; they cannot recognize every possible secret.
 - The remote must be `leonlimwf/leetcode-after-hours`, and publishing uses `main`.
 - A local lock prevents overlapping syncs. Dirty tracked changes or conflicts stop publishing with a visible error.
 - Each publishing run fetches remote updates with `git pull --ff-only` before generating the snapshot.
@@ -41,7 +42,7 @@ Requires Python 3.11 or later, Git, and a GitHub account with write access. Auth
 
 ```bash
 python3 scripts/sync.py --phase check \
-  --since 2026-10-08 \
+  --since 2026-09-16 \
   --ledger /path/to/ledger.json \
   --journal /path/to/journal.docx
 

@@ -40,7 +40,7 @@ A public Accepted submission and a learner-confirmed completion are recorded sep
 
 Recognizing common patterns in arrays, hash maps, stacks, linked lists, and trees. Turning an initial idea into working code. Handling edge cases and debugging calmly. Explaining tradeoffs clearly enough to walk an interviewer through my reasoning.
 
-The public log starts on **8 October 2026**. Earlier journal entries stay local unless I choose to import them. Git commits reflect when records are published; past submissions are not backdated into artificial daily commits.
+The practice history starts on **16 September 2026**. Earlier confirmed solutions were imported from my journal with my approval. Git commits reflect when records are published; past submissions are not backdated into artificial daily commits.
 
 ---
 

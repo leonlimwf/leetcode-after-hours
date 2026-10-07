@@ -6,10 +6,13 @@ import json
 from pathlib import Path
 import re
 
+from privacy import scan_public_tree
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
+    scanned = scan_public_tree(ROOT)
     snapshot = json.loads((ROOT / "data/progress.json").read_text(encoding="utf-8"))
     slugs = set()
     allowed = {"date", "number", "title", "leetcode_number", "slug", "difficulty", "topics", "status", "accepted_on", "profile_accepted", "problem_link", "question_path", "solution_path", "code_available", "complexity_available"}
@@ -30,7 +33,7 @@ def main():
         for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
             if "://" not in target and not target.startswith("#"):
                 assert (path.parent / target.split("#", 1)[0]).exists(), "Broken local link: " + target
-    print(f"Validated {len(slugs)} assignments, Python syntax, and Markdown links.")
+    print(f"Validated {len(slugs)} assignments, Python syntax, Markdown links, and privacy patterns across {scanned} public files.")
 
 
 if __name__ == "__main__":

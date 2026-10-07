@@ -27,6 +27,8 @@ The existing local automation runs at midnight and 5am in Singapore time. It rea
 
 Scheduled updates require the computer to be on, the desktop app running, and GitHub authentication available. Delivery can be delayed. GitHub Actions is not used as a second scheduler because a hosted runner cannot read my local journal or continue my coaching chat. See [the automation guide](docs/automation.md) for the setup and recovery steps.
 
+GitHub Actions runs regression tests and archive/privacy validation on pushes and pull requests. It has read-only repository permissions, receives no private journal or LeetCode credentials, and does not publish solutions. The local workflow uses a public-only progress lookup, no-repeat inventory, exact journal-code extraction, crash-safe publishing locks, and cached exports to make retries predictable.
+
 ## Explore the practice log
 
 - [Daily questions](QUESTIONS.md): dated assignments, difficulty, topics, and links.

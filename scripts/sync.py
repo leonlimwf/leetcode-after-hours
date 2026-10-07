@@ -4,11 +4,16 @@
 import argparse
 import ast
 from collections import Counter
+from contextlib import contextmanager
+import fcntl
+import hashlib
 import json
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
 
@@ -16,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 W = "{" + NS["w"] + "}"
 EXPECTED_REMOTE = "https://github.com/leonlimwf/leetcode-after-hours.git"
-PUBLIC_PATHS = ["README.md", "QUESTIONS.md", "PROGRESS.md", "data", "questions", "solutions", "scripts", "docs", ".gitignore"]
+PUBLIC_PATHS = ["README.md", "QUESTIONS.md", "PROGRESS.md", "data", "questions", "solutions", "scripts", "docs", ".gitignore", ".github/workflows/validate.yml"]
 
 
 def paragraph_text(element):
@@ -41,7 +46,7 @@ def journal_entries(path, assignments):
         if element.tag == W + "p":
             text = paragraph_text(element)
             match = re.fullmatch(r"(\d+)\s+(.+)", text.strip())
-            if match and int(match[1]) in headings and match[2] == headings[int(match[1])]["title"]:
+            if match and int(match[1]) in headings and " ".join(match[2].split()) == " ".join(headings[int(match[1])]["title"].split()):
                 current = headings[int(match[1])]["slug"]
                 if current in entries:
                     raise ValueError("Duplicate journal entry: " + current)
@@ -61,7 +66,7 @@ def journal_entries(path, assignments):
 
 
 def section(lines, start, ends):
-    index = next((i for i, text in enumerate(lines) if text.strip() == start or text.strip().startswith(start + "  |")), None)
+    index = next((i for i, text in enumerate(lines) if text.strip() == start or re.match(re.escape(start) + r"\s*\|", text.strip())), None)
     if index is None:
         return []
     stop = next((i for i in range(index + 1, len(lines)) if lines[i].strip() in ends), len(lines))
@@ -74,10 +79,17 @@ def solution_code(lines):
     if index is None:
         return None
     code_lines = work[index:]
+    # Explicit boundaries only: never trim broken Python until it parses.
+    stop = next((i for i, text in enumerate(code_lines) if text.strip() == "```" or re.match(r"^(?:Notes|My approach|Reflection):", text)), len(code_lines))
+    if any(re.match(r"\s*(?:class\s+Solution\b|def\s+\w+|```python)", text) for text in code_lines[stop + 1:]):
+        raise ValueError("Multiple solution blocks; explicitly select the submitted code.")
+    code_lines = code_lines[:stop]
     # Word contains an incidental space before some top-level class headings.
     code_lines = [line.lstrip() if re.match(r"^ (?:class|def)\s", line) else line for line in code_lines]
     code = "\n".join(code_lines).rstrip() + "\n"
-    ast.parse(code)
+    tree = ast.parse(code)
+    if sum(isinstance(node, ast.ClassDef) and node.name == "Solution" for node in tree.body) > 1:
+        raise ValueError("Multiple solution versions; explicitly select the submitted code.")
     return code
 
 
@@ -95,7 +107,8 @@ def label(record):
     return {"assigned": "Assigned", "in_progress": "In Progress", "missed": "Missed", "skipped": "Skipped"}.get(record["status"], record["status"])
 
 
-def export(ledger_path, journal_path, phase, since=None):
+def export(ledger_path, journal_path, phase, since=None, output_root=None):
+    output_root = output_root or ROOT
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     assignments = ledger["assigned"]
     entries = journal_entries(journal_path, assignments)
@@ -121,7 +134,7 @@ def export(ledger_path, journal_path, phase, since=None):
         record["profile_accepted"] = assignment.get("profile_observed_status") == "Accepted"
         record["problem_link"] = "https://leetcode.com/problems/" + slug + "/"
         record["question_path"] = "questions/" + assignment["date"] + "-" + slug + ".md"
-        solution_dir = ROOT / "solutions" / (str(assignment["leetcode_number"]).zfill(4) + "-" + slug)
+        solution_dir = output_root / "solutions" / (str(assignment["leetcode_number"]).zfill(4) + "-" + slug)
         code = None
         syntax_issue = False
         # Midnight publishes briefs, but does not refresh learner code snapshots.
@@ -144,7 +157,7 @@ def export(ledger_path, journal_path, phase, since=None):
             solution_readme += "## Complexity Analysis\n\n" + (complexity or "Analysis has not been recorded in the journal yet; no bounds are inferred by the publisher.") + "\n"
             write(solution_dir / "README.md", solution_readme)
         if assignment["status"] == "accepted" and (solution_dir / "README.md").exists():
-            record["solution_path"] = solution_dir.relative_to(ROOT).as_posix() + "/README.md"
+            record["solution_path"] = solution_dir.relative_to(output_root).as_posix() + "/README.md"
             record["code_available"] = (solution_dir / "solution.py").exists()
             if "complexity_available" not in record:
                 record["complexity_available"] = "Analysis has not been recorded" not in (solution_dir / "README.md").read_text(encoding="utf-8")
@@ -163,14 +176,14 @@ def export(ledger_path, journal_path, phase, since=None):
         brief += "## First Instinct\n\nWhat approach would you try first, and why?\n\nTry it before reading a solution. Write your approach and code in your private journal.\n"
         if record.get("solution_path"):
             brief += "\n[Archived solution and complexity](../" + record["solution_path"] + ")\n"
-        write(ROOT / record["question_path"], brief)
+        write(output_root / record["question_path"], brief)
         records.append(record)
     snapshot = {"version": 1, "owner": ledger["owner"], "timezone": ledger["timezone"], "started_on": ledger["started_on"], "completion_rule": ledger["completion_rule"], "assignments": records}
-    write(ROOT / "data/progress.json", json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n")
+    write(output_root / "data/progress.json", json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n")
     questions = "# Daily Questions\n\nFresh assignments selected by ChatGPT. All dates use Asia/Singapore.\n\n| Assigned | # | Problem | Difficulty | Topics | Status |\n| --- | --- | --- | --- | --- | --- |\n"
     for record in reversed(records):
         questions += f"| {record['date']} | {record['leetcode_number']} | [{record['title']}]({record['question_path']}) | {record['difficulty']} | {', '.join(record['topics'])} | {label(record)} |\n"
-    write(ROOT / "QUESTIONS.md", questions)
+    write(output_root / "QUESTIONS.md", questions)
     completed = [r for r in records if r["status"] == "accepted"]
     counts = Counter(r["difficulty"] for r in completed)
     progress = f"# Confirmed Completions\n\n**{len(completed)} confirmed Accepted** · {counts['Easy']} Easy · {counts['Medium']} Medium · {counts['Hard']} Hard\n\nThese dates come from the existing tracking ledger. Profile-observed acceptance awaits learner confirmation. Archived code is the journal snapshot, not a fetched copy of a private LeetCode submission.\n\n| Accepted | # | Problem | Difficulty | Code / analysis |\n| --- | --- | --- | --- | --- |\n"
@@ -181,12 +194,12 @@ def export(ledger_path, journal_path, phase, since=None):
     for record in records:
         if record["status"] != "accepted":
             progress += f"- [{record['title']}]({record['question_path']}) — {label(record)}\n"
-    write(ROOT / "PROGRESS.md", progress)
+    write(output_root / "PROGRESS.md", progress)
     print(f"Exported {len(records)} assignments and {len(completed)} confirmed completions.")
 
 
 def git(*args):
-    result = subprocess.run(["git", "-C", str(ROOT), *args], check=True, capture_output=True, text=True)
+    result = subprocess.run(["git", "-C", str(ROOT), *args], check=True, capture_output=True, text=True, timeout=45)
     return result.stdout.strip()
 
 
@@ -199,7 +212,101 @@ def prepare_publish():
         raise ValueError("Publishing is supported only on main.")
     if git("status", "--porcelain", "--untracked-files=no"):
         raise ValueError("Tracked changes are present. Review or commit them before publishing.")
-    git("pull", "--ff-only", "origin", "main")
+    git("fetch", "origin", "main")
+    # Supports a prior local commit whose push failed, without needless merges.
+    ahead, behind = map(int, git("rev-list", "--left-right", "--count", "HEAD...origin/main").split())
+    if ahead and behind:
+        raise ValueError("Local and remote history diverged; manual review required.")
+    if behind:
+        git("merge", "--ff-only", "origin/main")
+
+
+def sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+@contextmanager
+def sync_lock(root):
+    # OS releases flock on normal exit, exceptions, or process termination.
+    directory = root / ".sync.lock"
+    if directory.is_symlink() or (directory / "publish.lock").is_symlink():
+        raise ValueError("Expected a regular local sync lock.")
+    directory.mkdir(exist_ok=True)
+    with (directory / "publish.lock").open("a") as handle:
+        try:
+            fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            raise ValueError("Another sync is active.") from None
+        try:
+            yield directory
+        finally:
+            fcntl.flock(handle, fcntl.LOCK_UN)
+
+
+def public_files(root):
+    for relative in PUBLIC_PATHS:
+        path = root / relative
+        if path.is_file():
+            yield path
+        elif path.is_dir():
+            yield from (p for p in sorted(path.rglob("*")) if p.is_file() and "__pycache__" not in p.parts)
+
+
+def tree_hash(root):
+    digest = hashlib.sha256()
+    for path in public_files(root):
+        digest.update(path.relative_to(root).as_posix().encode())
+        digest.update(bytes.fromhex(sha256(path)))
+    return digest.hexdigest()
+
+
+def public_ledger_hash(path, since):
+    ledger = json.loads(path.read_text())
+    keys = ("date", "number", "title", "leetcode_number", "slug", "difficulty", "topics", "status", "accepted_on", "profile_observed_status")
+    visible = {key: ledger[key] for key in ("owner", "timezone", "started_on", "completion_rule")}
+    visible["assigned"] = [{key: a[key] for key in keys if key in a}
+                           for a in ledger["assigned"] if not since or a["date"] >= since]
+    return hashlib.sha256(json.dumps(visible, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def export_checked(ledger, journal, phase, since, state_dir):
+    from validate import validate
+    from privacy import scan_public_tree
+
+    scan_public_tree(ROOT)  # Privacy checks run even on a cache hit.
+    input_hashes = {"ledger": sha256(ledger), "journal": sha256(journal)}
+    # Private observation timestamps/notes don't affect the public export.
+    source = {"ledger": public_ledger_hash(ledger, since), "journal": input_hashes["journal"], "phase": phase, "since": since}
+    source["exporter"] = sha256(Path(__file__))
+    state_path = state_dir / "state.json"
+    try:
+        previous = json.loads(state_path.read_text())
+    except (OSError, ValueError):
+        previous = {}
+    if previous.get("source") == source and previous.get("public_sha256") == tree_hash(ROOT):
+        validate(ROOT)
+        print("Source and public snapshot unchanged; skipped archive regeneration.")
+        return
+    # Generate and validate off-checkout. A failed export leaves existing files intact.
+    with tempfile.TemporaryDirectory(prefix="leetcode-export-") as directory:
+        candidate = Path(directory)
+        for path in public_files(ROOT):
+            target = candidate / path.relative_to(ROOT)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(path, target)
+        export(ledger, journal, phase, since, output_root=candidate)
+        validate(candidate)
+        if input_hashes["ledger"] != sha256(ledger) or input_hashes["journal"] != sha256(journal):
+            raise ValueError("Private inputs changed during export; retry with a stable snapshot.")
+        for path in public_files(candidate):
+            target = ROOT / path.relative_to(candidate)
+            if not target.exists() or target.read_bytes() != path.read_bytes():
+                target.parent.mkdir(parents=True, exist_ok=True)
+                temporary = state_dir / "promote" / path.relative_to(candidate)
+                temporary.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(path, temporary)
+                temporary.replace(target)
+    write(state_path, json.dumps({"source": source, "public_sha256": tree_hash(ROOT)}, sort_keys=True) + "\n")
 
 
 def main():
@@ -212,16 +319,10 @@ def main():
     args = parser.parse_args()
     if args.since and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", args.since):
         parser.error("--since must be YYYY-MM-DD")
-    lock = ROOT / ".sync.lock"
-    try:
-        lock.mkdir()
-    except FileExistsError:
-        parser.exit(1, "Another sync is active. If a previous run crashed, inspect it before removing .sync.lock.\n")
-    try:
+    with sync_lock(ROOT) as state_dir:
         if args.publish:
             prepare_publish()
-        export(args.ledger, args.journal, args.phase, args.since)
-        subprocess.run([sys.executable, str(ROOT / "scripts/validate.py")], check=True)
+        export_checked(args.ledger, args.journal, args.phase, args.since, state_dir)
         if args.publish:
             git("add", "--", *(path for path in PUBLIC_PATHS if (ROOT / path).exists()))
             if git("diff", "--cached", "--name-only"):
@@ -229,16 +330,17 @@ def main():
                 date = records[-1]["date"] if records else "setup"
                 git("commit", "-m", f"practice: {args.phase} sync for {date}")
             # Also retries a commit whose earlier push failed, without duplicating it.
-            git("push", "origin", "main")
-            print("Published to https://github.com/leonlimwf/leetcode-after-hours")
-    finally:
-        lock.rmdir()
+            if git("rev-list", "--count", "origin/main..HEAD") != "0":
+                git("push", "origin", "main")
+                print("Published to https://github.com/leonlimwf/leetcode-after-hours")
+            else:
+                print("GitHub already up to date; no commit or push needed.")
 
 
 if __name__ == "__main__":
     try:
         main()
-    except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as error:
+    except (ValueError, OSError, KeyError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as error:
         # Keep private input paths and remote authentication output out of logs.
         print("Sync failed (" + type(error).__name__ + "). Review local inputs, Git status, and authentication; nothing was force-pushed.", file=sys.stderr)
         raise SystemExit(1)

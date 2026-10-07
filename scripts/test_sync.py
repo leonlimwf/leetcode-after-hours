@@ -11,9 +11,33 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 import sync
+from privacy import scan_public_tree
 
 
 class ExportTests(unittest.TestCase):
+    def test_remote_fast_forward_pending_push_and_divergence(self):
+        for history, expected_merge in [("0 2", True), ("2 0", False), ("0 0", False)]:
+            with self.subTest(history=history), patch.object(sync, "git") as git:
+                git.side_effect = [str(sync.ROOT), sync.EXPECTED_REMOTE, "main", "", "", history] + ([""] if expected_merge else [])
+                sync.prepare_publish()
+                self.assertEqual(any(call.args == ("merge", "--ff-only", "origin/main") for call in git.call_args_list), expected_merge)
+        with patch.object(sync, "git", side_effect=[str(sync.ROOT), sync.EXPECTED_REMOTE, "main", "", "", "1 1"]):
+            with self.assertRaises(ValueError):
+                sync.prepare_publish()
+
+    def test_lock_released_on_failure_and_blocks_overlap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with sync.sync_lock(root):
+                with self.assertRaises(ValueError):
+                    with sync.sync_lock(root):
+                        pass
+            with self.assertRaises(RuntimeError):
+                with sync.sync_lock(root):
+                    raise RuntimeError("Simulated failure")
+            with sync.sync_lock(root):
+                pass
+
     def test_acceptance_gating_idempotence_and_midnight(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -60,6 +84,26 @@ class ExportTests(unittest.TestCase):
                 code_path.write_text("# Existing published snapshot\n")
                 sync.export(ledger, journal, "midnight")
                 self.assertEqual(code_path.read_text(), "# Existing published snapshot\n")
+                with sync.sync_lock(public) as state, patch.object(sync, "export", wraps=sync.export) as exporter:
+                    sync.export_checked(ledger, journal, "check", None, state)
+                    private = json.loads(ledger.read_text())
+                    private["notes"] = "Non-exported private metadata changed"
+                    ledger.write_text(json.dumps(private))
+                    sync.export_checked(ledger, journal, "check", None, state)
+                    self.assertEqual(exporter.call_count, 1)
+                    # A damaged public file invalidates the cache and is repaired.
+                    code_path.write_text("# Altered snapshot\n")
+                    sync.export_checked(ledger, journal, "check", None, state)
+                    self.assertEqual(exporter.call_count, 2)
+                    self.assertIn("return 1", code_path.read_text())
+                    before = {p.relative_to(public): p.read_bytes() for p in sync.public_files(public)}
+                    private = json.loads(ledger.read_text())
+                    private["assigned"][0]["title"] = "Changed title"
+                    ledger.write_text(json.dumps(private))
+                    with self.assertRaises(ValueError):
+                        sync.export_checked(ledger, journal, "check", None, state)
+                    self.assertEqual(before, {p.relative_to(public): p.read_bytes() for p in sync.public_files(public)})
+                self.assertGreater(scan_public_tree(public), 0)
 
 
 if __name__ == "__main__":

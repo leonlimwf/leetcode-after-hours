@@ -26,6 +26,20 @@ class PrivacyTests(unittest.TestCase):
     def test_public_code_passes(self):
         self.assertFalse(scan_text("class Solution:\n    def solve(self, nums):\n        return len(nums)\n"))
 
+    def test_workflow_is_scanned_and_symlink_parents_blocked(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workflow = root / ".github/workflows/validate.yml"
+            workflow.parent.mkdir(parents=True)
+            workflow.write_text("token: " + "ghp_" + "a" * 36)
+            with self.assertRaises(ValueError):
+                scan_public_tree(root)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / ".github").symlink_to(root / "other", target_is_directory=True)
+            with self.assertRaises(ValueError):
+                scan_public_tree(root)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -426,12 +426,14 @@
         "Math",
         "Stack"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-08",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
       "question_path": "questions/2026-10-08-evaluate-reverse-polish-notation.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0150-evaluate-reverse-polish-notation/README.md",
+      "code_available": true
     }
   ]
 }

@@ -6,7 +6,7 @@ Topics: Array / Math / Stack
 
 [Open on LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  The integer result of evaluating the expression.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0150-evaluate-reverse-polish-notation/README.md)

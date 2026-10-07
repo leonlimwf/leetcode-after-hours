@@ -1,11 +1,12 @@
 # Confirmed Completions
 
-**17 confirmed Accepted** · 11 Easy · 6 Medium · 0 Hard
+**18 confirmed Accepted** · 11 Easy · 7 Medium · 0 Hard
 
 These dates come from the existing tracking ledger. Profile-observed acceptance awaits learner confirmation. Archived code is the journal snapshot, not a fetched copy of a private LeetCode submission.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Journal snapshot](solutions/0150-evaluate-reverse-polish-notation/README.md) |
 | 2026-10-04 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Journal snapshot](solutions/0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) |
 | 2026-10-03 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | [Journal snapshot](solutions/0110-balanced-binary-tree/README.md) |
 | 2026-10-01 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Journal snapshot](solutions/0104-maximum-depth-of-binary-tree/README.md) |
@@ -29,4 +30,3 @@ These dates come from the existing tracking ledger. Profile-observed acceptance 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) — In Progress
 - [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) — In Progress
-- [Evaluate Reverse Polish Notation](questions/2026-10-08-evaluate-reverse-polish-notation.md) — Assigned

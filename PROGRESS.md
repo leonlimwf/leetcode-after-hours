@@ -30,3 +30,4 @@ These dates come from the existing tracking ledger. Profile-observed acceptance 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) — Profile Accepted · pending confirmation
 - [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) — Profile Accepted · pending confirmation
+- [Daily Temperatures](questions/2026-10-09-daily-temperatures.md) — Assigned

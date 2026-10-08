@@ -4,7 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | 739 | [Daily Temperatures](questions/2026-10-09-daily-temperatures.md) | Medium | Array, Stack, Monotonic Stack | Assigned |
+| 2026-10-09 | 739 | [Daily Temperatures](questions/2026-10-09-daily-temperatures.md) | Medium | Array, Stack, Monotonic Stack | Missed |
 | 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](questions/2026-10-08-evaluate-reverse-polish-notation.md) | Medium | Array, Math, Stack | Accepted |
 | 2026-10-07 | 141 | [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) | Easy | Linked List, Two Pointers | Profile Accepted · pending confirmation |
 | 2026-10-06 | 206 | [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) | Easy | Linked List, Recursion | Profile Accepted · pending confirmation |

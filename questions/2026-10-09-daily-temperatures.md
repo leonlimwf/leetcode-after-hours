@@ -6,7 +6,7 @@ Topics: Array / Stack / Monotonic Stack
 
 [Open on LeetCode](https://leetcode.com/problems/daily-temperatures/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

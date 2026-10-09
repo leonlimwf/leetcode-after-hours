@@ -389,12 +389,14 @@
         "Linked List",
         "Recursion"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-06",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/reverse-linked-list/",
       "question_path": "questions/2026-10-06-reverse-linked-list.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0206-reverse-linked-list/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-07",
@@ -407,12 +409,14 @@
         "Linked List",
         "Two Pointers"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-07",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/linked-list-cycle/",
       "question_path": "questions/2026-10-07-linked-list-cycle.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0141-linked-list-cycle/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-08",
@@ -447,10 +451,32 @@
         "Stack",
         "Monotonic Stack"
       ],
-      "status": "missed",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-09",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/daily-temperatures/",
       "question_path": "questions/2026-10-09-daily-temperatures.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0739-daily-temperatures/README.md",
+      "code_available": true
+    }
+  ],
+  "additional_completions": [
+    {
+      "date": "2026-09-27",
+      "leetcode_number": 15,
+      "title": "3Sum",
+      "slug": "3sum",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-09-27",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/3sum/",
       "code_available": false,
       "complexity_available": false
     }

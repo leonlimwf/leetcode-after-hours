@@ -1,12 +1,15 @@
 # Confirmed Completions
 
-**18 confirmed Accepted** · 11 Easy · 7 Medium · 0 Hard
+**22 confirmed Accepted** · 13 Easy · 9 Medium · 0 Hard
 
-These dates come from the existing tracking ledger. Profile-observed acceptance awaits learner confirmation. Archived code is the journal snapshot, not a fetched copy of a private LeetCode submission.
+This includes 21 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-09 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Journal snapshot](solutions/0739-daily-temperatures/README.md) |
 | 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Journal snapshot](solutions/0150-evaluate-reverse-polish-notation/README.md) |
+| 2026-10-07 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Journal snapshot](solutions/0141-linked-list-cycle/README.md) |
+| 2026-10-06 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Journal snapshot](solutions/0206-reverse-linked-list/README.md) |
 | 2026-10-04 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Journal snapshot](solutions/0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) |
 | 2026-10-03 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | [Journal snapshot](solutions/0110-balanced-binary-tree/README.md) |
 | 2026-10-01 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Journal snapshot](solutions/0104-maximum-depth-of-binary-tree/README.md) |
@@ -25,9 +28,14 @@ These dates come from the existing tracking ledger. Profile-observed acceptance 
 | 2026-09-17 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Journal snapshot](solutions/0020-valid-parentheses/README.md) |
 | 2026-09-16 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Journal snapshot](solutions/0001-two-sum/README.md) |
 
+## Additional accepted problems
+
+These are user-confirmed completions outside the daily assignment pages. No code or complexity is published unless it is present in the journal.
+
+| Accepted | # | Problem | Difficulty | Code / analysis |
+| --- | --- | --- | --- | --- |
+| 2026-09-27 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Not in journal |
+
 ## Awaiting completion or confirmation
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
-- [Reverse Linked List](questions/2026-10-06-reverse-linked-list.md) — Profile Accepted · pending confirmation
-- [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) — Profile Accepted · pending confirmation
-- [Daily Temperatures](questions/2026-10-09-daily-temperatures.md) — Missed

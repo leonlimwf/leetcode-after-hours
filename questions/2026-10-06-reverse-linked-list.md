@@ -6,7 +6,7 @@ Topics: Linked List / Recursion
 
 [Open on LeetCode](https://leetcode.com/problems/reverse-linked-list/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  The head of the same linked list after its links are reversed.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0206-reverse-linked-list/README.md)

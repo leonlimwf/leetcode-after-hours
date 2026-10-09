@@ -6,7 +6,7 @@ Topics: Linked List / Two Pointers
 
 [Open on LeetCode](https://leetcode.com/problems/linked-list-cycle/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  A boolean indicating whether following next pointers eventually revisits
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0141-linked-list-cycle/README.md)

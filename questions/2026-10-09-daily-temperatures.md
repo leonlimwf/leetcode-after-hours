@@ -6,7 +6,7 @@ Topics: Array / Stack / Monotonic Stack
 
 [Open on LeetCode](https://leetcode.com/problems/daily-temperatures/)
 
-Status: **Missed**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  A same-length array of waiting times; use 0 when no warmer future day ex
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0739-daily-temperatures/README.md)

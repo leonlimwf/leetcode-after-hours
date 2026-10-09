@@ -26,6 +26,18 @@ def validate(root):
             assert record["status"] == "accepted", "Unconfirmed solution published"
             assert (root / record["solution_path"]).is_file(), "Missing solution notes"
         assert not record["code_available"] or record.get("solution_path"), "Code without archive"
+    extra_allowed = {"date", "title", "leetcode_number", "slug", "difficulty", "topics", "status", "accepted_on", "profile_accepted", "problem_link", "code_available", "complexity_available"}
+    for record in snapshot.get("additional_completions", []):
+        assert set(record) <= extra_allowed, "Unexpected private metadata in additional completion"
+        assert record["status"] == "accepted", "Unconfirmed additional completion published"
+        assert record["slug"] not in slugs, "Duplicate completion slug"
+        slugs.add(record["slug"])
+        assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", record["date"]), "Invalid additional completion date"
+        assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", record["accepted_on"]), "Invalid additional acceptance date"
+        assert isinstance(record["leetcode_number"], int) and record["leetcode_number"] > 0, "Invalid additional LeetCode number"
+        assert re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", record["slug"]), "Unsafe additional slug"
+        assert record["problem_link"] == "https://leetcode.com/problems/" + record["slug"] + "/", "Unexpected additional problem link"
+        assert record["code_available"] is False and record["complexity_available"] is False, "Unarchived additional solution claims code or analysis"
     paths = [path for path in root.rglob("*") if path.is_file() and
              (path.relative_to(root).parts[0] in PUBLIC_DIRS | PUBLIC_FILES or path.relative_to(root).as_posix() == PUBLIC_WORKFLOW) and
              "__pycache__" not in path.parts]

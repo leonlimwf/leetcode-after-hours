@@ -48,7 +48,8 @@ class ExportTests(unittest.TestCase):
                 {"date": "2026-10-01", "number": 1, "title": "First", "leetcode_number": 1, "slug": "first", "difficulty": "Easy", "topics": ["Array"], "status": "accepted", "accepted_on": "2026-10-01"},
                 {"date": "2026-10-02", "number": 2, "title": "Second", "leetcode_number": 2, "slug": "second", "difficulty": "Easy", "topics": ["Array"], "status": "in_progress", "profile_observed_status": "Accepted", "private_note": "DO_NOT_PUBLISH"},
             ]
-            ledger.write_text(json.dumps({"owner": "example", "timezone": "Asia/Singapore", "started_on": "2026-10-01", "completion_rule": "Explicit confirmation", "assigned": assignments}))
+            additional = [{"date": "2026-10-02", "leetcode_number": 15, "title": "3Sum", "slug": "3sum", "difficulty": "Medium", "topics": ["Array", "Two Pointers", "Sorting"], "status": "accepted", "accepted_on": "2026-10-02", "profile_observed_status": "Accepted", "confirmation_source": "EXTRA_PRIVATE_DO_NOT_PUBLISH"}]
+            ledger.write_text(json.dumps({"owner": "example", "timezone": "Asia/Singapore", "started_on": "2026-10-01", "completion_rule": "Explicit confirmation", "assigned": assignments, "additional_completions": additional}))
             journal = root / "private.docx"
             lines = []
             for number, title in [(1, "First"), (2, "Second")]:
@@ -67,6 +68,7 @@ class ExportTests(unittest.TestCase):
                 sync.export(ledger, journal, "check", since="2026-10-02")
                 snapshot = json.loads((filtered / "data/progress.json").read_text())
                 self.assertEqual([record["slug"] for record in snapshot["assignments"]], ["second"])
+                self.assertEqual([record["slug"] for record in snapshot["additional_completions"]], ["3sum"])
                 self.assertFalse((filtered / "solutions/0001-first").exists())
                 self.assertFalse((filtered / "questions/2026-10-01-first.md").exists())
             with patch.object(sync, "ROOT", public), contextlib.redirect_stdout(io.StringIO()):
@@ -75,9 +77,12 @@ class ExportTests(unittest.TestCase):
                 self.assertTrue(snapshot["assignments"][0]["code_available"])
                 self.assertFalse(snapshot["assignments"][1]["code_available"])
                 self.assertTrue(snapshot["assignments"][1]["profile_accepted"])
+                self.assertEqual(snapshot["additional_completions"][0]["title"], "3Sum")
+                self.assertFalse(snapshot["additional_completions"][0]["code_available"])
                 self.assertFalse((public / "solutions/0002-second").exists())
                 all_files = {p.relative_to(public): p.read_bytes() for p in public.rglob("*") if p.is_file()}
                 self.assertNotIn(b"DO_NOT_PUBLISH", b"".join(all_files.values()))
+                self.assertNotIn(b"EXTRA_PRIVATE_DO_NOT_PUBLISH", b"".join(all_files.values()))
                 sync.export(ledger, journal, "check")
                 self.assertEqual(all_files, {p.relative_to(public): p.read_bytes() for p in public.rglob("*") if p.is_file()})
                 code_path = public / "solutions/0001-first/solution.py"

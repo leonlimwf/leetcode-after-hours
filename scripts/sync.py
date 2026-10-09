@@ -112,6 +112,22 @@ def export(ledger_path, journal_path, phase, since=None, output_root=None):
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     assignments = ledger["assigned"]
     entries = journal_entries(journal_path, assignments)
+    assignment_slugs = {assignment["slug"] for assignment in assignments}
+    additional = []
+    extra_keys = ("date", "leetcode_number", "title", "slug", "difficulty", "topics", "status", "accepted_on")
+    for item in ledger.get("additional_completions", []):
+        if item.get("status") != "accepted":
+            raise ValueError("Additional completion is not user-confirmed Accepted: " + str(item.get("slug", "unknown")))
+        if item.get("slug") in assignment_slugs:
+            raise ValueError("Additional completion duplicates a daily assignment: " + item["slug"])
+        if since and item["date"] < since:
+            continue
+        record = {key: item[key] for key in extra_keys}
+        record["profile_accepted"] = item.get("profile_observed_status") == "Accepted"
+        record["problem_link"] = "https://leetcode.com/problems/" + item["slug"] + "/"
+        record["code_available"] = False
+        record["complexity_available"] = False
+        additional.append(record)
     if since:
         assignments = [assignment for assignment in assignments if assignment["date"] >= since]
     records = []
@@ -178,18 +194,23 @@ def export(ledger_path, journal_path, phase, since=None, output_root=None):
             brief += "\n[Archived solution and complexity](../" + record["solution_path"] + ")\n"
         write(output_root / record["question_path"], brief)
         records.append(record)
-    snapshot = {"version": 1, "owner": ledger["owner"], "timezone": ledger["timezone"], "started_on": ledger["started_on"], "completion_rule": ledger["completion_rule"], "assignments": records}
+    snapshot = {"version": 1, "owner": ledger["owner"], "timezone": ledger["timezone"], "started_on": ledger["started_on"], "completion_rule": ledger["completion_rule"], "assignments": records, "additional_completions": additional}
     write(output_root / "data/progress.json", json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n")
     questions = "# Daily Questions\n\nFresh assignments selected by ChatGPT. All dates use Asia/Singapore.\n\n| Assigned | # | Problem | Difficulty | Topics | Status |\n| --- | --- | --- | --- | --- | --- |\n"
     for record in reversed(records):
         questions += f"| {record['date']} | {record['leetcode_number']} | [{record['title']}]({record['question_path']}) | {record['difficulty']} | {', '.join(record['topics'])} | {label(record)} |\n"
     write(output_root / "QUESTIONS.md", questions)
     completed = [r for r in records if r["status"] == "accepted"]
-    counts = Counter(r["difficulty"] for r in completed)
-    progress = f"# Confirmed Completions\n\n**{len(completed)} confirmed Accepted** · {counts['Easy']} Easy · {counts['Medium']} Medium · {counts['Hard']} Hard\n\nThese dates come from the existing tracking ledger. Profile-observed acceptance awaits learner confirmation. Archived code is the journal snapshot, not a fetched copy of a private LeetCode submission.\n\n| Accepted | # | Problem | Difficulty | Code / analysis |\n| --- | --- | --- | --- | --- |\n"
+    counts = Counter(r["difficulty"] for r in completed + additional)
+    total_completed = len(completed) + len(additional)
+    progress = f"# Confirmed Completions\n\n**{total_completed} confirmed Accepted** · {counts['Easy']} Easy · {counts['Medium']} Medium · {counts['Hard']} Hard\n\nThis includes {len(completed)} daily assignment completions and {len(additional)} additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.\n\n| Accepted | # | Problem | Difficulty | Code / analysis |\n| --- | --- | --- | --- | --- |\n"
     for record in reversed(completed):
         archive = f"[Journal snapshot]({record['solution_path']})" if record.get("solution_path") else "Not published yet"
         progress += f"| {record.get('accepted_on', 'Not recorded')} | {record['leetcode_number']} | [{record['title']}]({record['problem_link']}) | {record['difficulty']} | {archive} |\n"
+    if additional:
+        progress += "\n## Additional accepted problems\n\nThese are user-confirmed completions outside the daily assignment pages. No code or complexity is published unless it is present in the journal.\n\n| Accepted | # | Problem | Difficulty | Code / analysis |\n| --- | --- | --- | --- | --- |\n"
+        for record in reversed(additional):
+            progress += f"| {record['accepted_on']} | {record['leetcode_number']} | [{record['title']}]({record['problem_link']}) | {record['difficulty']} | Not in journal |\n"
     progress += "\n## Awaiting completion or confirmation\n\n"
     for record in records:
         if record["status"] != "accepted":
@@ -266,6 +287,10 @@ def public_ledger_hash(path, since):
     visible = {key: ledger[key] for key in ("owner", "timezone", "started_on", "completion_rule")}
     visible["assigned"] = [{key: a[key] for key in keys if key in a}
                            for a in ledger["assigned"] if not since or a["date"] >= since]
+    extra_keys = ("date", "leetcode_number", "title", "slug", "difficulty", "topics", "status", "accepted_on", "profile_observed_status")
+    visible["additional_completions"] = [{key: item[key] for key in extra_keys if key in item}
+                                         for item in ledger.get("additional_completions", [])
+                                         if not since or item["date"] >= since]
     return hashlib.sha256(json.dumps(visible, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
 

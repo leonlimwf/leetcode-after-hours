@@ -459,6 +459,47 @@
       "complexity_available": true,
       "solution_path": "solutions/0739-daily-temperatures/README.md",
       "code_available": true
+    },
+    {
+      "date": "2026-10-10",
+      "number": 23,
+      "title": "Subarray Sum Equals K",
+      "leetcode_number": 560,
+      "slug": "subarray-sum-equals-k",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-11",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+      "question_path": "questions/2026-10-10-subarray-sum-equals-k.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0560-subarray-sum-equals-k/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-11",
+      "number": 24,
+      "title": "Find Peak Element",
+      "leetcode_number": 162,
+      "slug": "find-peak-element",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-11",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/find-peak-element/",
+      "question_path": "questions/2026-10-11-find-peak-element.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0162-find-peak-element/README.md",
+      "code_available": true
     }
   ],
   "additional_completions": [

@@ -1,11 +1,13 @@
 # Confirmed Completions
 
-**22 confirmed Accepted** · 13 Easy · 9 Medium · 0 Hard
+**24 confirmed Accepted** · 13 Easy · 11 Medium · 0 Hard
 
-This includes 21 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 23 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-11 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | [Journal snapshot](solutions/0162-find-peak-element/README.md) |
+| 2026-10-11 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | [Journal snapshot](solutions/0560-subarray-sum-equals-k/README.md) |
 | 2026-10-09 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Journal snapshot](solutions/0739-daily-temperatures/README.md) |
 | 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Journal snapshot](solutions/0150-evaluate-reverse-polish-notation/README.md) |
 | 2026-10-07 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Journal snapshot](solutions/0141-linked-list-cycle/README.md) |

@@ -4,6 +4,8 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-11 | 162 | [Find Peak Element](questions/2026-10-11-find-peak-element.md) | Medium | Array, Binary Search | Accepted |
+| 2026-10-10 | 560 | [Subarray Sum Equals K](questions/2026-10-10-subarray-sum-equals-k.md) | Medium | Array, Hash Table, Prefix Sum | Accepted |
 | 2026-10-09 | 739 | [Daily Temperatures](questions/2026-10-09-daily-temperatures.md) | Medium | Array, Stack, Monotonic Stack | Accepted |
 | 2026-10-08 | 150 | [Evaluate Reverse Polish Notation](questions/2026-10-08-evaluate-reverse-polish-notation.md) | Medium | Array, Math, Stack | Accepted |
 | 2026-10-07 | 141 | [Linked List Cycle](questions/2026-10-07-linked-list-cycle.md) | Easy | Linked List, Two Pointers | Accepted |

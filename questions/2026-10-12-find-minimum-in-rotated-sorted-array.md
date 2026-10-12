@@ -58,6 +58,14 @@ class Solution:
 
         return nums[left]
 
+Complexity Analysis
+
+Time complexity: O(log n).
+
+Auxiliary space complexity: O(1).
+
+Why: Each loop iteration reduces the search interval by about half, and each iteration does constant work. Only a fixed number of indices are stored; the input list is not copied.
+
 Completion Check
 
 [ ] Attempted    [ ] Submitted    [ ] Accepted    [ ] Needs another attempt

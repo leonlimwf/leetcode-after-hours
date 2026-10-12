@@ -42,3 +42,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Find Minimum in Rotated Sorted Array](questions/2026-10-12-find-minimum-in-rotated-sorted-array.md) — Assigned
+- [Search a 2D Matrix](questions/2026-10-13-search-a-2d-matrix.md) — Assigned

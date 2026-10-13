@@ -43,3 +43,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 ## Awaiting completion or confirmation
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
+- [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) — Assigned

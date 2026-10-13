@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-14 | 33 | [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) | Medium | Array, Binary Search | Assigned |
 | 2026-10-13 | 74 | [Search a 2D Matrix](questions/2026-10-13-search-a-2d-matrix.md) | Medium | Array, Binary Search, Matrix | Accepted |
 | 2026-10-12 | 153 | [Find Minimum in Rotated Sorted Array](questions/2026-10-12-find-minimum-in-rotated-sorted-array.md) | Medium | Array, Binary Search | Accepted |
 | 2026-10-11 | 162 | [Find Peak Element](questions/2026-10-11-find-peak-element.md) | Medium | Array, Binary Search | Accepted |

@@ -1,11 +1,13 @@
 # Confirmed Completions
 
-**24 confirmed Accepted** · 13 Easy · 11 Medium · 0 Hard
+**26 confirmed Accepted** · 13 Easy · 13 Medium · 0 Hard
 
-This includes 23 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 25 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-13 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | [Journal snapshot](solutions/0074-search-a-2d-matrix/README.md) |
+| 2026-10-13 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Journal snapshot](solutions/0153-find-minimum-in-rotated-sorted-array/README.md) |
 | 2026-10-11 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | [Journal snapshot](solutions/0162-find-peak-element/README.md) |
 | 2026-10-11 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | [Journal snapshot](solutions/0560-subarray-sum-equals-k/README.md) |
 | 2026-10-09 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Journal snapshot](solutions/0739-daily-temperatures/README.md) |
@@ -41,5 +43,3 @@ These are user-confirmed completions outside the daily assignment pages. No code
 ## Awaiting completion or confirmation
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
-- [Find Minimum in Rotated Sorted Array](questions/2026-10-12-find-minimum-in-rotated-sorted-array.md) — Assigned
-- [Search a 2D Matrix](questions/2026-10-13-search-a-2d-matrix.md) — Assigned

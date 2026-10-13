@@ -6,7 +6,7 @@ Topics: Array / Binary Search / Matrix
 
 [Open on LeetCode](https://leetcode.com/problems/search-a-2d-matrix/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  A boolean: true if target is present; false otherwise.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0074-search-a-2d-matrix/README.md)

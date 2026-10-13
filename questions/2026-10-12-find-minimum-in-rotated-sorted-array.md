@@ -6,7 +6,7 @@ Topics: Array / Binary Search
 
 [Open on LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -68,9 +68,9 @@ Why: Each loop iteration reduces the search interval by about half, and each ite
 
 Completion Check
 
-[ ] Attempted    [ ] Submitted    [ ] Accepted    [ ] Needs another attempt
+[X] Attempted    [X] Submitted    [X] Accepted    [ ] Needs another attempt
 
-Accepted on  ____________________
+Accepted on  October 13 2026
 
   One sentence to remember __________________________________________
 
@@ -82,3 +82,5 @@ Back to Contents
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0153-find-minimum-in-rotated-sorted-array/README.md)

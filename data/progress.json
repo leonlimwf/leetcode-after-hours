@@ -512,12 +512,14 @@
         "Array",
         "Binary Search"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-13",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
       "question_path": "questions/2026-10-12-find-minimum-in-rotated-sorted-array.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0153-find-minimum-in-rotated-sorted-array/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-13",
@@ -531,12 +533,14 @@
         "Binary Search",
         "Matrix"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-13",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/search-a-2d-matrix/",
       "question_path": "questions/2026-10-13-search-a-2d-matrix.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0074-search-a-2d-matrix/README.md",
+      "code_available": true
     }
   ],
   "additional_completions": [

@@ -6,7 +6,7 @@ Topics: String / Hash Table / Sliding Window
 
 [Open on LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

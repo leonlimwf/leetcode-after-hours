@@ -553,10 +553,29 @@
         "Array",
         "Binary Search"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "in_progress",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
       "question_path": "questions/2026-10-14-search-in-rotated-sorted-array.md",
+      "code_available": false,
+      "complexity_available": false
+    },
+    {
+      "date": "2026-10-15",
+      "number": 28,
+      "title": "Longest Repeating Character Replacement",
+      "leetcode_number": 424,
+      "slug": "longest-repeating-character-replacement",
+      "difficulty": "Medium",
+      "topics": [
+        "String",
+        "Hash Table",
+        "Sliding Window"
+      ],
+      "status": "assigned",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "question_path": "questions/2026-10-15-longest-repeating-character-replacement.md",
       "code_available": false,
       "complexity_available": false
     }

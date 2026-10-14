@@ -6,7 +6,7 @@ Topics: Array / Binary Search
 
 [Open on LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
-Status: **Assigned**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

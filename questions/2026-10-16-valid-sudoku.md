@@ -6,7 +6,7 @@ Topics: Array / Hash Table / Matrix
 
 [Open on LeetCode](https://leetcode.com/problems/valid-sudoku/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

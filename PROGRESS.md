@@ -45,3 +45,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) — Profile Accepted · pending confirmation
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
+- [Valid Sudoku](questions/2026-10-16-valid-sudoku.md) — Assigned

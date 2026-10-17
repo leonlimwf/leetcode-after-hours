@@ -1,11 +1,14 @@
 # Confirmed Completions
 
-**26 confirmed Accepted** · 13 Easy · 13 Medium · 0 Hard
+**29 confirmed Accepted** · 13 Easy · 16 Medium · 0 Hard
 
-This includes 25 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 28 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-17 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Journal snapshot](solutions/0011-container-with-most-water/README.md) |
+| 2026-10-16 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | [Journal snapshot](solutions/0036-valid-sudoku/README.md) |
+| 2026-10-14 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | [Journal snapshot](solutions/0033-search-in-rotated-sorted-array/README.md) |
 | 2026-10-13 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | [Journal snapshot](solutions/0074-search-a-2d-matrix/README.md) |
 | 2026-10-13 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Journal snapshot](solutions/0153-find-minimum-in-rotated-sorted-array/README.md) |
 | 2026-10-11 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | [Journal snapshot](solutions/0162-find-peak-element/README.md) |
@@ -43,6 +46,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 ## Awaiting completion or confirmation
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
-- [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) — Profile Accepted · pending confirmation
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
-- [Valid Sudoku](questions/2026-10-16-valid-sudoku.md) — Missed

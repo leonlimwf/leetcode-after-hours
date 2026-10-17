@@ -6,7 +6,7 @@ Topics: Array / Hash Table / Matrix
 
 [Open on LeetCode](https://leetcode.com/problems/valid-sudoku/)
 
-Status: **Missed**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ board.length == 9 • board[i].length == 9 • board[i][j] is a digit '1' throug
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0036-valid-sudoku/README.md)

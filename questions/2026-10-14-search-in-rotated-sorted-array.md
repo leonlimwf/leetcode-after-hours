@@ -6,7 +6,7 @@ Topics: Array / Binary Search
 
 [Open on LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  The index of target in nums, or -1 if target is absent.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0033-search-in-rotated-sorted-array/README.md)

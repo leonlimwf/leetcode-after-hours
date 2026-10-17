@@ -4,9 +4,10 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-16 | 36 | [Valid Sudoku](questions/2026-10-16-valid-sudoku.md) | Medium | Array, Hash Table, Matrix | Missed |
+| 2026-10-17 | 11 | [Container With Most Water](questions/2026-10-17-container-with-most-water.md) | Medium | Array, Two Pointers, Greedy | Accepted |
+| 2026-10-16 | 36 | [Valid Sudoku](questions/2026-10-16-valid-sudoku.md) | Medium | Array, Hash Table, Matrix | Accepted |
 | 2026-10-15 | 424 | [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) | Medium | String, Hash Table, Sliding Window | Missed |
-| 2026-10-14 | 33 | [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) | Medium | Array, Binary Search | Profile Accepted · pending confirmation |
+| 2026-10-14 | 33 | [Search in Rotated Sorted Array](questions/2026-10-14-search-in-rotated-sorted-array.md) | Medium | Array, Binary Search | Accepted |
 | 2026-10-13 | 74 | [Search a 2D Matrix](questions/2026-10-13-search-a-2d-matrix.md) | Medium | Array, Binary Search, Matrix | Accepted |
 | 2026-10-12 | 153 | [Find Minimum in Rotated Sorted Array](questions/2026-10-12-find-minimum-in-rotated-sorted-array.md) | Medium | Array, Binary Search | Accepted |
 | 2026-10-11 | 162 | [Find Peak Element](questions/2026-10-11-find-peak-element.md) | Medium | Array, Binary Search | Accepted |

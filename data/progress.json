@@ -553,12 +553,14 @@
         "Array",
         "Binary Search"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-14",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
       "question_path": "questions/2026-10-14-search-in-rotated-sorted-array.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0033-search-in-rotated-sorted-array/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-15",
@@ -591,12 +593,35 @@
         "Hash Table",
         "Matrix"
       ],
-      "status": "missed",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-16",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/valid-sudoku/",
       "question_path": "questions/2026-10-16-valid-sudoku.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0036-valid-sudoku/README.md",
+      "code_available": true
+    },
+    {
+      "date": "2026-10-17",
+      "number": 30,
+      "title": "Container With Most Water",
+      "leetcode_number": 11,
+      "slug": "container-with-most-water",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "status": "accepted",
+      "accepted_on": "2026-10-17",
+      "profile_accepted": true,
+      "problem_link": "https://leetcode.com/problems/container-with-most-water/",
+      "question_path": "questions/2026-10-17-container-with-most-water.md",
+      "complexity_available": true,
+      "solution_path": "solutions/0011-container-with-most-water/README.md",
+      "code_available": true
     }
   ],
   "additional_completions": [

@@ -181,7 +181,7 @@ def export(ledger_path, journal_path, phase, since=None, output_root=None):
             record["code_available"] = False
             record["complexity_available"] = False
         brief = f"# {assignment['leetcode_number']}. {assignment['title']}\n\nAssigned: **{assignment['date']}** · **{assignment['difficulty']}**\n\nTopics: {' / '.join(assignment['topics'])}\n\n[Open on LeetCode]({record['problem_link']})\n\nStatus: **{label(record)}**\n\n"
-        for heading, ends in [("Problem Statement", {"Input and Output"}), ("Input and Output", {"Examples"}), ("Examples", {"Constraints"}), ("Constraints", {"Your Work"})]:
+        for heading, ends in [("Problem Statement", {"Input and Output"}), ("Input and Output", {"Examples"}), ("Examples", {"Constraints"}), ("Constraints", {"Your Work", "First Instinct", "Completion Check"})]:
             content = section(lines, heading, ends)
             if any(text.strip() for text in content):
                 brief += "## " + heading + "\n\n"

@@ -79,6 +79,8 @@ Accepted on  October 17, 2026
 
 Back to Contents
 
+Daily assignments plus one additional accepted problem; * marks the self-selected completion.
+
 
 ## First Instinct
 

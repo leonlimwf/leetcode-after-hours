@@ -31,56 +31,6 @@ Output  Return one integer: the maximum amount of water any two lines can contai
 
 2 <= height.length <= 10^5 • 0 <= height[i] <= 10^4
 
-First Instinct
-
-What approach would you try first, and why?
-
-class Solution:
-
-    def maxArea(self, height: list[int]) -> int:
-
-        left = 0
-
-        right = len(height)-1
-
-        maxWater = 0
-
-        while left<=right:
-
-            width = right-left
-
-            min_height = min(height[left],height[right])
-
-            maxWater=max(maxWater, width*min_height)
-
-            if height[left]<height[right]:
-
-                left+=1
-
-            else:
-
-                right-=1
-
-        return maxWater
-
-Complexity Analysis
-
-Time Complexity: O(n). Each iteration moves one pointer inward, so there are at most n iterations.
-
-Auxiliary Space: O(1). The function uses only a fixed number of variables; extra space does not grow with the input.
-
-Completion Check
-
-[x] Attempted    [x] Submitted    [x] Accepted    [ ] Needs another attempt
-
-Accepted on  October 17, 2026
-
-  One sentence to remember __________________________________________
-
-Back to Contents
-
-Daily assignments plus one additional accepted problem; * marks the self-selected completion.
-
 
 ## First Instinct
 

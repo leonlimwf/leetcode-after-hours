@@ -32,20 +32,6 @@ Output  A list of intervals with overlapping ranges combined.
 
 1 <= intervals.length <= 10^4 • intervals[i].length == 2 • 0 <= start_i <= end_i <= 10^4
 
-First Instinct
-
-What approach would you try first, and why?
-
-Completion Check
-
-[ ] Attempted    [ ] Submitted    [ ] Accepted    [ ] Needs another attempt
-
-Accepted on  ________________________________________
-
-  One sentence to remember __________________________________________
-
-Back to Contents
-
 
 ## First Instinct
 

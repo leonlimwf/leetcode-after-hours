@@ -32,50 +32,6 @@ Output  The minimum element in nums.
 
 1 <= n <= 5000 • -5000 <= nums[i] <= 5000 • All values are unique • nums is sorted and rotated between 1 and n times
 
-First Instinct
-
-What approach would you try first, and why?
-
-class Solution:
-
-    def findMin(self, nums: list[int]) -> int:
-
-        left = 0
-
-        right = len(nums)-1
-
-        while left < right:
-
-            mid = (left+right)//2
-
-            if nums[mid]>nums[right]:
-
-                left = mid+1
-
-            else:
-
-                right = mid
-
-        return nums[left]
-
-Complexity Analysis
-
-Time complexity: O(log n).
-
-Auxiliary space complexity: O(1).
-
-Why: Each loop iteration reduces the search interval by about half, and each iteration does constant work. Only a fixed number of indices are stored; the input list is not copied.
-
-Completion Check
-
-[X] Attempted    [X] Submitted    [X] Accepted    [ ] Needs another attempt
-
-Accepted on  October 13 2026
-
-  One sentence to remember __________________________________________
-
-Back to Contents
-
 
 ## First Instinct
 

@@ -635,9 +635,30 @@
         "Sorting"
       ],
       "status": "assigned",
-      "profile_accepted": false,
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/merge-intervals/",
       "question_path": "questions/2026-10-18-merge-intervals.md",
+      "code_available": false,
+      "complexity_available": false
+    },
+    {
+      "date": "2026-10-20",
+      "number": 32,
+      "title": "Kth Largest Element in an Array",
+      "leetcode_number": 215,
+      "slug": "kth-largest-element-in-an-array",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap",
+        "Quickselect"
+      ],
+      "status": "assigned",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "question_path": "questions/2026-10-20-kth-largest-element-in-an-array.md",
       "code_available": false,
       "complexity_available": false
     }

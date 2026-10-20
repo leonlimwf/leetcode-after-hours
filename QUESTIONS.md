@@ -4,7 +4,8 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | 56 | [Merge Intervals](questions/2026-10-18-merge-intervals.md) | Medium | Array, Sorting | Assigned |
+| 2026-10-20 | 215 | [Kth Largest Element in an Array](questions/2026-10-20-kth-largest-element-in-an-array.md) | Medium | Array, Divide and Conquer, Sorting, Heap, Quickselect | Assigned |
+| 2026-10-18 | 56 | [Merge Intervals](questions/2026-10-18-merge-intervals.md) | Medium | Array, Sorting | Profile Accepted · pending confirmation |
 | 2026-10-17 | 11 | [Container With Most Water](questions/2026-10-17-container-with-most-water.md) | Medium | Array, Two Pointers, Greedy | Accepted |
 | 2026-10-16 | 36 | [Valid Sudoku](questions/2026-10-16-valid-sudoku.md) | Medium | Array, Hash Table, Matrix | Accepted |
 | 2026-10-15 | 424 | [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) | Medium | String, Hash Table, Sliding Window | Missed |

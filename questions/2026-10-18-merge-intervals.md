@@ -6,7 +6,7 @@ Topics: Array / Sorting
 
 [Open on LeetCode](https://leetcode.com/problems/merge-intervals/)
 
-Status: **Assigned**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

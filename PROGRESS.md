@@ -49,4 +49,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
 - [Merge Intervals](questions/2026-10-18-merge-intervals.md) — Profile Accepted · pending confirmation
 - [Kth Largest Element in an Array](questions/2026-10-20-kth-largest-element-in-an-array.md) — Assigned
-- [House Robber](questions/2026-10-21-house-robber.md) — Assigned
+- [House Robber](questions/2026-10-21-house-robber.md) — Missed

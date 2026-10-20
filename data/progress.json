@@ -661,6 +661,24 @@
       "question_path": "questions/2026-10-20-kth-largest-element-in-an-array.md",
       "code_available": false,
       "complexity_available": false
+    },
+    {
+      "date": "2026-10-21",
+      "number": 33,
+      "title": "House Robber",
+      "leetcode_number": 198,
+      "slug": "house-robber",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "status": "assigned",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/house-robber/",
+      "question_path": "questions/2026-10-21-house-robber.md",
+      "code_available": false,
+      "complexity_available": false
     }
   ],
   "additional_completions": [

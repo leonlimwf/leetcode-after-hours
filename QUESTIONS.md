@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-22 | 70 | [Climbing Stairs](questions/2026-10-22-climbing-stairs.md) | Easy | Math, Dynamic Programming, Memoization | Assigned |
 | 2026-10-21 | 198 | [House Robber](questions/2026-10-21-house-robber.md) | Medium | Array, Dynamic Programming | Accepted |
 | 2026-10-20 | 215 | [Kth Largest Element in an Array](questions/2026-10-20-kth-largest-element-in-an-array.md) | Medium | Array, Divide and Conquer, Sorting, Heap, Quickselect | Accepted |
 | 2026-10-18 | 56 | [Merge Intervals](questions/2026-10-18-merge-intervals.md) | Medium | Array, Sorting | Accepted |

@@ -6,7 +6,7 @@ Topics: Array / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/house-robber/)
 
-Status: **Missed**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the maximum amount that can be taken without choosing adjacent ho
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0198-house-robber/README.md)

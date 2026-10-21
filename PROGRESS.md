@@ -1,11 +1,14 @@
 # Confirmed Completions
 
-**29 confirmed Accepted** · 13 Easy · 16 Medium · 0 Hard
+**32 confirmed Accepted** · 13 Easy · 19 Medium · 0 Hard
 
-This includes 28 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 31 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| 2026-10-21 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | [Journal snapshot](solutions/0198-house-robber/README.md) |
+| 2026-10-21 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [Journal snapshot](solutions/0215-kth-largest-element-in-an-array/README.md) |
+| 2026-10-21 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | [Journal snapshot](solutions/0056-merge-intervals/README.md) |
 | 2026-10-17 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Journal snapshot](solutions/0011-container-with-most-water/README.md) |
 | 2026-10-16 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | [Journal snapshot](solutions/0036-valid-sudoku/README.md) |
 | 2026-10-14 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | [Journal snapshot](solutions/0033-search-in-rotated-sorted-array/README.md) |
@@ -47,6 +50,3 @@ These are user-confirmed completions outside the daily assignment pages. No code
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
-- [Merge Intervals](questions/2026-10-18-merge-intervals.md) — Profile Accepted · pending confirmation
-- [Kth Largest Element in an Array](questions/2026-10-20-kth-largest-element-in-an-array.md) — Assigned
-- [House Robber](questions/2026-10-21-house-robber.md) — Missed

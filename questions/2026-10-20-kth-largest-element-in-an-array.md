@@ -6,7 +6,7 @@ Topics: Array / Divide and Conquer / Sorting / Heap / Quickselect
 
 [Open on LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the kth largest value in nums; the result is not required to be d
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0215-kth-largest-element-in-an-array/README.md)

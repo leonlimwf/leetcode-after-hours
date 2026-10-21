@@ -634,12 +634,14 @@
         "Array",
         "Sorting"
       ],
-      "status": "assigned",
+      "status": "accepted",
+      "accepted_on": "2026-10-21",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/merge-intervals/",
       "question_path": "questions/2026-10-18-merge-intervals.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": false,
+      "solution_path": "solutions/0056-merge-intervals/README.md",
+      "code_available": false
     },
     {
       "date": "2026-10-20",
@@ -655,12 +657,14 @@
         "Heap",
         "Quickselect"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-21",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
       "question_path": "questions/2026-10-20-kth-largest-element-in-an-array.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0215-kth-largest-element-in-an-array/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-21",
@@ -673,12 +677,14 @@
         "Array",
         "Dynamic Programming"
       ],
-      "status": "missed",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-21",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/house-robber/",
       "question_path": "questions/2026-10-21-house-robber.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0198-house-robber/README.md",
+      "code_available": true
     }
   ],
   "additional_completions": [

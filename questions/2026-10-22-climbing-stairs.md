@@ -6,7 +6,7 @@ Topics: Math / Dynamic Programming / Memoization
 
 [Open on LeetCode](https://leetcode.com/problems/climbing-stairs/)
 
-Status: **Assigned**
+Status: **In Progress**
 
 ## Problem Statement
 

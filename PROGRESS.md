@@ -53,3 +53,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Climbing Stairs](questions/2026-10-22-climbing-stairs.md) — Profile Accepted · pending confirmation
 - [Jump Game](questions/2026-10-23-jump-game.md) — Profile Accepted · pending confirmation
 - [Min Cost Climbing Stairs](questions/2026-10-24-min-cost-climbing-stairs.md) — Assigned
+- [Jump Game II](questions/2026-10-25-jump-game-ii.md) — Assigned

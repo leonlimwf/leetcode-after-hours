@@ -741,6 +741,25 @@
       "question_path": "questions/2026-10-24-min-cost-climbing-stairs.md",
       "code_available": false,
       "complexity_available": false
+    },
+    {
+      "date": "2026-10-25",
+      "number": 37,
+      "title": "Jump Game II",
+      "leetcode_number": 45,
+      "slug": "jump-game-ii",
+      "difficulty": "Medium",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "status": "assigned",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/jump-game-ii/",
+      "question_path": "questions/2026-10-25-jump-game-ii.md",
+      "code_available": false,
+      "complexity_available": false
     }
   ],
   "additional_completions": [

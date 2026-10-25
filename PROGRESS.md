@@ -54,3 +54,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
 - [Jump Game II](questions/2026-10-25-jump-game-ii.md) — Missed
+- [Decode Ways](questions/2026-10-26-decode-ways.md) — Assigned

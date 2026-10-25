@@ -6,7 +6,7 @@ Topics: Array / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the minimum total fee required to reach the top beyond the last s
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0746-min-cost-climbing-stairs/README.md)

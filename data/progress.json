@@ -735,12 +735,14 @@
         "Array",
         "Dynamic Programming"
       ],
-      "status": "assigned",
-      "profile_accepted": false,
+      "status": "accepted",
+      "accepted_on": "2026-10-25",
+      "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/min-cost-climbing-stairs/",
       "question_path": "questions/2026-10-24-min-cost-climbing-stairs.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0746-min-cost-climbing-stairs/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-25",

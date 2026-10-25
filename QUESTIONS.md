@@ -5,7 +5,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-25 | 45 | [Jump Game II](questions/2026-10-25-jump-game-ii.md) | Medium | Array, Dynamic Programming, Greedy | Missed |
-| 2026-10-24 | 746 | [Min Cost Climbing Stairs](questions/2026-10-24-min-cost-climbing-stairs.md) | Easy | Array, Dynamic Programming | Assigned |
+| 2026-10-24 | 746 | [Min Cost Climbing Stairs](questions/2026-10-24-min-cost-climbing-stairs.md) | Easy | Array, Dynamic Programming | Accepted |
 | 2026-10-23 | 55 | [Jump Game](questions/2026-10-23-jump-game.md) | Medium | Array, Dynamic Programming, Greedy | Profile Accepted · pending confirmation |
 | 2026-10-22 | 70 | [Climbing Stairs](questions/2026-10-22-climbing-stairs.md) | Easy | Math, Dynamic Programming, Memoization | Profile Accepted · pending confirmation |
 | 2026-10-21 | 198 | [House Robber](questions/2026-10-21-house-robber.md) | Medium | Array, Dynamic Programming | Accepted |

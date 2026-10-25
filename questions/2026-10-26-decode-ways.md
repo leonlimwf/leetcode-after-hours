@@ -6,7 +6,7 @@ Topics: String / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/decode-ways/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import textwrap
 import xml.etree.ElementTree as ET
 import zipfile
 
@@ -87,7 +88,12 @@ def solution_code(lines):
     # Word contains an incidental space before some top-level class headings.
     code_lines = [line.lstrip() if re.match(r"^ (?:class|def)\s", line) else line for line in code_lines]
     code = "\n".join(code_lines).rstrip() + "\n"
-    tree = ast.parse(code)
+    try:
+        tree = ast.parse(code)
+    except IndentationError:
+        # Word may encode code-block indentation as leading tabs; normalize only that wrapper indentation.
+        code = textwrap.dedent(code).rstrip() + "\n"
+        tree = ast.parse(code)
     if sum(isinstance(node, ast.ClassDef) and node.name == "Solution" for node in tree.body) > 1:
         raise ValueError("Multiple solution versions; explicitly select the submitted code.")
     return code

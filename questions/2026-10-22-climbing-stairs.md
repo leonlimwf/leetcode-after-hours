@@ -6,7 +6,7 @@ Topics: Math / Dynamic Programming / Memoization
 
 [Open on LeetCode](https://leetcode.com/problems/climbing-stairs/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the number of distinct ways to climb exactly n steps.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0070-climbing-stairs/README.md)

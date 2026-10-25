@@ -1,12 +1,14 @@
 # Confirmed Completions
 
-**33 confirmed Accepted** · 14 Easy · 19 Medium · 0 Hard
+**35 confirmed Accepted** · 15 Easy · 20 Medium · 0 Hard
 
-This includes 32 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 34 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
 | 2026-10-25 | 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | [Journal snapshot](solutions/0746-min-cost-climbing-stairs/README.md) |
+| 2026-10-23 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Journal snapshot](solutions/0055-jump-game/README.md) |
+| 2026-10-22 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [Journal snapshot](solutions/0070-climbing-stairs/README.md) |
 | 2026-10-21 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | [Journal snapshot](solutions/0198-house-robber/README.md) |
 | 2026-10-21 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [Journal snapshot](solutions/0215-kth-largest-element-in-an-array/README.md) |
 | 2026-10-21 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | [Journal snapshot](solutions/0056-merge-intervals/README.md) |
@@ -51,6 +53,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
-- [Climbing Stairs](questions/2026-10-22-climbing-stairs.md) — Profile Accepted · pending confirmation
-- [Jump Game](questions/2026-10-23-jump-game.md) — Profile Accepted · pending confirmation
 - [Jump Game II](questions/2026-10-25-jump-game-ii.md) — Missed

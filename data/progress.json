@@ -803,6 +803,24 @@
       "question_path": "questions/2026-10-27-longest-palindromic-substring.md",
       "code_available": false,
       "complexity_available": false
+    },
+    {
+      "date": "2026-10-27",
+      "number": 40,
+      "title": "Longest Common Subsequence",
+      "leetcode_number": 1143,
+      "slug": "longest-common-subsequence",
+      "difficulty": "Medium",
+      "topics": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "status": "in_progress",
+      "profile_accepted": false,
+      "problem_link": "https://leetcode.com/problems/longest-common-subsequence/",
+      "question_path": "questions/2026-10-27-longest-common-subsequence.md",
+      "code_available": false,
+      "complexity_available": false
     }
   ],
   "additional_completions": [

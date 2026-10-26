@@ -6,7 +6,7 @@ Topics: String / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/longest-common-subsequence/)
 
-Status: **In Progress**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

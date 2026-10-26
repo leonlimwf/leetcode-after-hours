@@ -6,7 +6,7 @@ Topics: String / Two Pointers / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/longest-palindromic-substring/)
 
-Status: **Assigned**
+Status: **In Progress**
 
 ## Problem Statement
 

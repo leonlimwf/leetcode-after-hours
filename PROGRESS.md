@@ -55,5 +55,5 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
 - [Jump Game II](questions/2026-10-25-jump-game-ii.md) — Missed
 - [Decode Ways](questions/2026-10-26-decode-ways.md) — Profile Accepted · pending confirmation
-- [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) — Assigned
-- [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) — In Progress
+- [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) — In Progress
+- [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) — Profile Accepted · pending confirmation

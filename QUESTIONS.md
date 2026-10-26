@@ -4,7 +4,8 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | 91 | [Decode Ways](questions/2026-10-26-decode-ways.md) | Medium | String, Dynamic Programming | Missed |
+| 2026-10-27 | 5 | [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) | Medium | String, Two Pointers, Dynamic Programming | Assigned |
+| 2026-10-26 | 91 | [Decode Ways](questions/2026-10-26-decode-ways.md) | Medium | String, Dynamic Programming | Profile Accepted · pending confirmation |
 | 2026-10-25 | 45 | [Jump Game II](questions/2026-10-25-jump-game-ii.md) | Medium | Array, Dynamic Programming, Greedy | Missed |
 | 2026-10-24 | 746 | [Min Cost Climbing Stairs](questions/2026-10-24-min-cost-climbing-stairs.md) | Easy | Array, Dynamic Programming | Accepted |
 | 2026-10-23 | 55 | [Jump Game](questions/2026-10-23-jump-game.md) | Medium | Array, Dynamic Programming, Greedy | Accepted |

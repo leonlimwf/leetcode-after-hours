@@ -87,13 +87,25 @@ def preflight(ledger_path, journal_path, slot, slug=None):
         raise ValueError("Duplicate assignment slug in private ledger.")
     if len({a["number"] for a in assignments}) != len(assignments):
         raise ValueError("Duplicate journal entry number in private ledger.")
-    matches = [a for a in assignments if a["slug"] == slug] if slug else [a for a in assignments if a["date"] == slot["date"]]
+    baseline = ledger.get("daily_baselines", {}).get(slot["date"])
+    if slug:
+        matches = [a for a in assignments if a["slug"] == slug]
+    else:
+        date_matches = [a for a in assignments if a["date"] == slot["date"]]
+        primary_slug = baseline.get("assigned_slug") if baseline else None
+        if primary_slug:
+            matches = [a for a in date_matches if a["slug"] == primary_slug]
+            if date_matches and not matches:
+                raise ValueError("Daily baseline assignment is missing from the ledger.")
+        elif date_matches:
+            matches = [min(date_matches, key=lambda a: a["number"])]
+        else:
+            matches = []
     if len(matches) > 1:
-        raise ValueError("Multiple assignments for the intended date.")
+        raise ValueError("Duplicate assignment slug for the intended date.")
     assignment = matches[0] if matches else None
     entries = journal_entries(journal_path, assignments)
     current_hash = sha256(journal_path)
-    baseline = ledger.get("daily_baselines", {}).get(slot["date"])
     if baseline and assignment and not slug and baseline.get("assigned_slug") != assignment["slug"]:
         raise ValueError("Daily baseline refers to a different assignment.")
     checks = [c for c in ledger.get("checks", []) if c.get("date") == slot["date"] and
@@ -118,10 +130,13 @@ def preflight(ledger_path, journal_path, slot, slug=None):
 
 def pick(ledger, candidates, date):
     existing = [a for a in ledger["assigned"] if a["date"] == date]
-    if len(existing) > 1:
-        raise ValueError("Multiple assignments for date.")
     if existing:
-        return {"reused": True, "selection": existing[0]}
+        primary_slug = ledger.get("daily_baselines", {}).get(date, {}).get("assigned_slug")
+        selection = next((a for a in existing if a["slug"] == primary_slug), None)
+        if selection is None:
+            selection = min(existing, key=lambda a: a["number"])
+        return {"reused": True, "selection": selection,
+                "same_day_additional_assignments": [a for a in existing if a is not selection]}
     used = set(used_slugs(ledger))
     eligible = []
     seen = set()

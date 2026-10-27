@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-28 | 62 | [Unique Paths](questions/2026-10-28-unique-paths.md) | Medium | Math, Dynamic Programming, Combinatorics | Assigned |
 | 2026-10-27 | 1143 | [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) | Medium | String, Dynamic Programming | Profile Accepted · pending confirmation |
 | 2026-10-27 | 5 | [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) | Medium | String, Two Pointers, Dynamic Programming | In Progress |
 | 2026-10-26 | 91 | [Decode Ways](questions/2026-10-26-decode-ways.md) | Medium | String, Dynamic Programming | Profile Accepted · pending confirmation |

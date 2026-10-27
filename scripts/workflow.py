@@ -134,7 +134,12 @@ def pick(ledger, candidates, date):
         primary_slug = ledger.get("daily_baselines", {}).get(date, {}).get("assigned_slug")
         selection = next((a for a in existing if a["slug"] == primary_slug), None)
         if selection is None:
-            selection = min(existing, key=lambda a: a["number"])
+            numbered = [(a["number"], a) for a in existing if isinstance(a.get("number"), int)]
+            if len(numbered) == len(existing):
+                selection = min(numbered, key=lambda item: item[0])[1]
+            else:
+                # Older ledger entries may not have journal numbers; keep their saved order.
+                selection = existing[0]
         return {"reused": True, "selection": selection,
                 "same_day_additional_assignments": [a for a in existing if a is not selection]}
     used = set(used_slugs(ledger))

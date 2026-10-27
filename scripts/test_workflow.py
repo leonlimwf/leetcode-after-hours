@@ -57,7 +57,9 @@ class WorkflowTests(unittest.TestCase):
         ledger = {"assigned": [{"date": "2026-10-08", "slug": "old"}]}
         candidates = [{"slug": "old", "difficulty": "Easy"}, {"slug": "new", "difficulty": "Medium"},
                       {"slug": "hard", "difficulty": "Hard"}]
-        self.assertTrue(workflow.pick(ledger, candidates, "2026-10-08")["reused"])
+        reused = workflow.pick(ledger, candidates, "2026-10-08")
+        self.assertTrue(reused["reused"])
+        self.assertEqual(reused["selection"]["slug"], "old")
         self.assertEqual(workflow.pick(ledger, candidates, "2026-10-09")["selection"]["slug"], "new")
         with self.assertRaises(ValueError):
             workflow.pick(ledger, candidates[:1], "2026-10-09")

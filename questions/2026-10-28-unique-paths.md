@@ -6,7 +6,7 @@ Topics: Math / Dynamic Programming / Combinatorics
 
 [Open on LeetCode](https://leetcode.com/problems/unique-paths/)
 
-Status: **Assigned**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

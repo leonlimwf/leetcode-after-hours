@@ -57,4 +57,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Decode Ways](questions/2026-10-26-decode-ways.md) — Profile Accepted · pending confirmation
 - [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) — In Progress
 - [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) — Profile Accepted · pending confirmation
-- [Unique Paths](questions/2026-10-28-unique-paths.md) — Assigned
+- [Unique Paths](questions/2026-10-28-unique-paths.md) — Profile Accepted · pending confirmation

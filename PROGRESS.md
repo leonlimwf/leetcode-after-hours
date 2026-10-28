@@ -58,4 +58,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) — In Progress
 - [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) — Profile Accepted · pending confirmation
 - [Unique Paths](questions/2026-10-28-unique-paths.md) — Profile Accepted · pending confirmation
-- [Combination Sum](questions/2026-10-29-combination-sum.md) — Assigned
+- [Combination Sum](questions/2026-10-29-combination-sum.md) — Missed

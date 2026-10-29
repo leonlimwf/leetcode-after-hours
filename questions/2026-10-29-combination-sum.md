@@ -6,7 +6,7 @@ Topics: Array / Backtracking
 
 [Open on LeetCode](https://leetcode.com/problems/combination-sum/)
 
-Status: **Missed**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

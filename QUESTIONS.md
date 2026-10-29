@@ -4,7 +4,8 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-29 | 39 | [Combination Sum](questions/2026-10-29-combination-sum.md) | Medium | Array, Backtracking | Missed |
+| 2026-10-30 | 300 | [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) | Medium | Array, Binary Search, Dynamic Programming | Assigned |
+| 2026-10-29 | 39 | [Combination Sum](questions/2026-10-29-combination-sum.md) | Medium | Array, Backtracking | Profile Accepted · pending confirmation |
 | 2026-10-28 | 62 | [Unique Paths](questions/2026-10-28-unique-paths.md) | Medium | Math, Dynamic Programming, Combinatorics | Profile Accepted · pending confirmation |
 | 2026-10-27 | 1143 | [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) | Medium | String, Dynamic Programming | Profile Accepted · pending confirmation |
 | 2026-10-27 | 5 | [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) | Medium | String, Two Pointers, Dynamic Programming | In Progress |

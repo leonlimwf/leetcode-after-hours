@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-31 | 200 | [Number of Islands](questions/2026-10-31-number-of-islands.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix, Union Find | Assigned |
 | 2026-10-30 | 300 | [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) | Medium | Array, Binary Search, Dynamic Programming | Assigned |
 | 2026-10-29 | 39 | [Combination Sum](questions/2026-10-29-combination-sum.md) | Medium | Array, Backtracking | Profile Accepted · pending confirmation |
 | 2026-10-28 | 62 | [Unique Paths](questions/2026-10-28-unique-paths.md) | Medium | Math, Dynamic Programming, Combinatorics | Profile Accepted · pending confirmation |

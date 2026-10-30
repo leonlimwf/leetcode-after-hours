@@ -60,3 +60,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Unique Paths](questions/2026-10-28-unique-paths.md) — Profile Accepted · pending confirmation
 - [Combination Sum](questions/2026-10-29-combination-sum.md) — Profile Accepted · pending confirmation
 - [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) — Assigned
+- [Number of Islands](questions/2026-10-31-number-of-islands.md) — Assigned

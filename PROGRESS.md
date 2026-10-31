@@ -61,3 +61,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Combination Sum](questions/2026-10-29-combination-sum.md) — Profile Accepted · pending confirmation
 - [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) — Assigned
 - [Number of Islands](questions/2026-10-31-number-of-islands.md) — Assigned
+- [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned

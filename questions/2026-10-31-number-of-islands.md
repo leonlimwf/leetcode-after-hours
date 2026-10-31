@@ -6,7 +6,7 @@ Topics: Array / Depth-First Search / Breadth-First Search / Matrix / Union Find
 
 [Open on LeetCode](https://leetcode.com/problems/number-of-islands/)
 
-Status: **Assigned**
+Status: **In Progress**
 
 ## Problem Statement
 

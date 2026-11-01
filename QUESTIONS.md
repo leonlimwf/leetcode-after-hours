@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | 733 | [Flood Fill](questions/2026-11-02-flood-fill.md) | Easy | Array, Depth-First Search, Breadth-First Search, Matrix | Assigned |
 | 2026-11-01 | 695 | [Max Area of Island](questions/2026-11-01-max-area-of-island.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix | Assigned |
 | 2026-10-31 | 200 | [Number of Islands](questions/2026-10-31-number-of-islands.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix, Union Find | In Progress |
 | 2026-10-30 | 300 | [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) | Medium | Array, Binary Search, Dynamic Programming | Assigned |

@@ -62,3 +62,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) — Assigned
 - [Number of Islands](questions/2026-10-31-number-of-islands.md) — In Progress
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
+- [Flood Fill](questions/2026-11-02-flood-fill.md) — Assigned

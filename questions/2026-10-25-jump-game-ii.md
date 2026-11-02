@@ -37,3 +37,5 @@ Output  Return the minimum number of jumps needed to reach the last index.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0045-jump-game-ii/README.md)

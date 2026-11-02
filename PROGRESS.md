@@ -11,7 +11,7 @@ This includes 40 daily assignment completions and 1 additional accepted problem(
 | 2026-10-27 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | [Journal snapshot](solutions/0062-unique-paths/README.md) |
 | 2026-10-26 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | [Journal snapshot](solutions/1143-longest-common-subsequence/README.md) |
 | 2026-10-26 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | [Journal snapshot](solutions/0091-decode-ways/README.md) |
-| 2026-11-02 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | Not published yet |
+| 2026-11-02 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | [Journal snapshot](solutions/0045-jump-game-ii/README.md) |
 | 2026-10-25 | 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | [Journal snapshot](solutions/0746-min-cost-climbing-stairs/README.md) |
 | 2026-10-23 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Journal snapshot](solutions/0055-jump-game/README.md) |
 | 2026-10-22 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [Journal snapshot](solutions/0070-climbing-stairs/README.md) |
@@ -63,4 +63,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) — Assigned
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
-- [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) — Assigned
+- [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) — In Progress

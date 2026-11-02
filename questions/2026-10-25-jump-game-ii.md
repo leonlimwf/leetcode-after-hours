@@ -6,7 +6,7 @@ Topics: Array / Dynamic Programming / Greedy
 
 [Open on LeetCode](https://leetcode.com/problems/jump-game-ii/)
 
-Status: **Missed**
+Status: **Accepted**
 
 ## Problem Statement
 

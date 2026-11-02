@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-03 | 680 | [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) | Easy | Two Pointers, String, Greedy | Assigned |
 | 2026-11-02 | 733 | [Flood Fill](questions/2026-11-02-flood-fill.md) | Easy | Array, Depth-First Search, Breadth-First Search, Matrix | Missed |
 | 2026-11-01 | 695 | [Max Area of Island](questions/2026-11-01-max-area-of-island.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix | Assigned |
 | 2026-10-31 | 200 | [Number of Islands](questions/2026-10-31-number-of-islands.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix, Union Find | Accepted |
@@ -13,7 +14,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 | 2026-10-27 | 1143 | [Longest Common Subsequence](questions/2026-10-27-longest-common-subsequence.md) | Medium | String, Dynamic Programming | Accepted |
 | 2026-10-27 | 5 | [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) | Medium | String, Two Pointers, Dynamic Programming | In Progress |
 | 2026-10-26 | 91 | [Decode Ways](questions/2026-10-26-decode-ways.md) | Medium | String, Dynamic Programming | Accepted |
-| 2026-10-25 | 45 | [Jump Game II](questions/2026-10-25-jump-game-ii.md) | Medium | Array, Dynamic Programming, Greedy | Missed |
+| 2026-10-25 | 45 | [Jump Game II](questions/2026-10-25-jump-game-ii.md) | Medium | Array, Dynamic Programming, Greedy | Accepted |
 | 2026-10-24 | 746 | [Min Cost Climbing Stairs](questions/2026-10-24-min-cost-climbing-stairs.md) | Easy | Array, Dynamic Programming | Accepted |
 | 2026-10-23 | 55 | [Jump Game](questions/2026-10-23-jump-game.md) | Medium | Array, Dynamic Programming, Greedy | Accepted |
 | 2026-10-22 | 70 | [Climbing Stairs](questions/2026-10-22-climbing-stairs.md) | Easy | Math, Dynamic Programming, Memoization | Accepted |

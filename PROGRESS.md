@@ -1,8 +1,8 @@
 # Confirmed Completions
 
-**40 confirmed Accepted** · 15 Easy · 25 Medium · 0 Hard
+**41 confirmed Accepted** · 15 Easy · 26 Medium · 0 Hard
 
-This includes 39 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 40 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
@@ -11,6 +11,7 @@ This includes 39 daily assignment completions and 1 additional accepted problem(
 | 2026-10-27 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | [Journal snapshot](solutions/0062-unique-paths/README.md) |
 | 2026-10-26 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | [Journal snapshot](solutions/1143-longest-common-subsequence/README.md) |
 | 2026-10-26 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | [Journal snapshot](solutions/0091-decode-ways/README.md) |
+| 2026-11-02 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | Not published yet |
 | 2026-10-25 | 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | [Journal snapshot](solutions/0746-min-cost-climbing-stairs/README.md) |
 | 2026-10-23 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Journal snapshot](solutions/0055-jump-game/README.md) |
 | 2026-10-22 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [Journal snapshot](solutions/0070-climbing-stairs/README.md) |
@@ -58,8 +59,8 @@ These are user-confirmed completions outside the daily assignment pages. No code
 
 - [Binary Tree Level Order Traversal](questions/2026-10-05-binary-tree-level-order-traversal.md) — Missed
 - [Longest Repeating Character Replacement](questions/2026-10-15-longest-repeating-character-replacement.md) — Missed
-- [Jump Game II](questions/2026-10-25-jump-game-ii.md) — Missed
 - [Longest Palindromic Substring](questions/2026-10-27-longest-palindromic-substring.md) — In Progress
 - [Longest Increasing Subsequence](questions/2026-10-30-longest-increasing-subsequence.md) — Assigned
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
+- [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) — Assigned

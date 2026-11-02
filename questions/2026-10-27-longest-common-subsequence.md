@@ -6,7 +6,7 @@ Topics: String / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/longest-common-subsequence/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  Return the length of the longest subsequence shared by text1 and text2.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/1143-longest-common-subsequence/README.md)

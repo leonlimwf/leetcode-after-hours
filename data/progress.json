@@ -778,12 +778,14 @@
         "String",
         "Dynamic Programming"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-26",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/decode-ways/",
       "question_path": "questions/2026-10-26-decode-ways.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0091-decode-ways/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-27",
@@ -815,12 +817,14 @@
         "String",
         "Dynamic Programming"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-26",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/longest-common-subsequence/",
       "question_path": "questions/2026-10-27-longest-common-subsequence.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/1143-longest-common-subsequence/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-28",
@@ -834,12 +838,14 @@
         "Dynamic Programming",
         "Combinatorics"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-27",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/unique-paths/",
       "question_path": "questions/2026-10-28-unique-paths.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0062-unique-paths/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-29",
@@ -852,12 +858,14 @@
         "Array",
         "Backtracking"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-29",
       "profile_accepted": true,
       "problem_link": "https://leetcode.com/problems/combination-sum/",
       "question_path": "questions/2026-10-29-combination-sum.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0039-combination-sum/README.md",
+      "code_available": true
     },
     {
       "date": "2026-10-30",
@@ -892,12 +900,14 @@
         "Matrix",
         "Union Find"
       ],
-      "status": "in_progress",
+      "status": "accepted",
+      "accepted_on": "2026-10-31",
       "profile_accepted": false,
       "problem_link": "https://leetcode.com/problems/number-of-islands/",
       "question_path": "questions/2026-10-31-number-of-islands.md",
-      "code_available": false,
-      "complexity_available": false
+      "complexity_available": true,
+      "solution_path": "solutions/0200-number-of-islands/README.md",
+      "code_available": true
     },
     {
       "date": "2026-11-01",

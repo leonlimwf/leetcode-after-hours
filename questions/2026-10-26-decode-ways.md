@@ -6,7 +6,7 @@ Topics: String / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/decode-ways/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -38,3 +38,5 @@ Output  Return the number of valid decodings, or 0 if the string cannot be decod
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0091-decode-ways/README.md)

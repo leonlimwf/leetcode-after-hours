@@ -6,7 +6,7 @@ Topics: Math / Dynamic Programming / Combinatorics
 
 [Open on LeetCode](https://leetcode.com/problems/unique-paths/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the number of distinct paths from the upper-left to the lower-rig
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0062-unique-paths/README.md)

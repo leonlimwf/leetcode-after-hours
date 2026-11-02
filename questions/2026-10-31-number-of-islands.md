@@ -6,7 +6,7 @@ Topics: Array / Depth-First Search / Breadth-First Search / Matrix / Union Find
 
 [Open on LeetCode](https://leetcode.com/problems/number-of-islands/)
 
-Status: **In Progress**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return the number of islands in the grid.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0200-number-of-islands/README.md)

@@ -6,7 +6,7 @@ Topics: Array / Backtracking
 
 [Open on LeetCode](https://leetcode.com/problems/combination-sum/)
 
-Status: **Profile Accepted · pending confirmation**
+Status: **Accepted**
 
 ## Problem Statement
 
@@ -37,3 +37,5 @@ Output  Return all unique combinations that sum to target, in any order.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0039-combination-sum/README.md)

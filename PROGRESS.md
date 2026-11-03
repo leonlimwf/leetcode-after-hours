@@ -64,3 +64,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
 - [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) — In Progress
+- [Missing Number](questions/2026-11-04-missing-number.md) — Assigned

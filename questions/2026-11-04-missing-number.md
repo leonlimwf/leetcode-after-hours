@@ -6,7 +6,7 @@ Topics: Array / Hash Table / Math / Binary Search / Bit Manipulation / Sorting
 
 [Open on LeetCode](https://leetcode.com/problems/missing-number/)
 
-Status: **Assigned**
+Status: **Accepted**
 
 ## Problem Statement
 

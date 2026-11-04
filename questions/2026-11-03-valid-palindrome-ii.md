@@ -6,7 +6,7 @@ Topics: Two Pointers / String / Greedy
 
 [Open on LeetCode](https://leetcode.com/problems/valid-palindrome-ii/)
 
-Status: **In Progress**
+Status: **Accepted**
 
 ## Problem Statement
 

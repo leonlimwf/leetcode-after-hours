@@ -4,8 +4,9 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | 268 | [Missing Number](questions/2026-11-04-missing-number.md) | Easy | Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting | Assigned |
-| 2026-11-03 | 680 | [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) | Easy | Two Pointers, String, Greedy | In Progress |
+| 2026-11-05 | 169 | [Majority Element](questions/2026-11-05-majority-element.md) | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting | Assigned |
+| 2026-11-04 | 268 | [Missing Number](questions/2026-11-04-missing-number.md) | Easy | Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting | Accepted |
+| 2026-11-03 | 680 | [Valid Palindrome II](questions/2026-11-03-valid-palindrome-ii.md) | Easy | Two Pointers, String, Greedy | Accepted |
 | 2026-11-02 | 733 | [Flood Fill](questions/2026-11-02-flood-fill.md) | Easy | Array, Depth-First Search, Breadth-First Search, Matrix | Missed |
 | 2026-11-01 | 695 | [Max Area of Island](questions/2026-11-01-max-area-of-island.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix | Assigned |
 | 2026-10-31 | 200 | [Number of Islands](questions/2026-10-31-number-of-islands.md) | Medium | Array, Depth-First Search, Breadth-First Search, Matrix, Union Find | Accepted |

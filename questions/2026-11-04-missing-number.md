@@ -38,3 +38,5 @@ n == nums.length • 1 <= n <= 10^4 • 0 <= nums[i] <= n • All values are uni
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0268-missing-number/README.md)

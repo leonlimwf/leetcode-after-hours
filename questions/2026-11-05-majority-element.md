@@ -6,7 +6,7 @@ Topics: Array / Hash Table / Divide and Conquer / Sorting / Counting
 
 [Open on LeetCode](https://leetcode.com/problems/majority-element/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

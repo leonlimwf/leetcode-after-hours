@@ -38,3 +38,5 @@ Output  Return true if deleting zero or one character can make s a palindrome; o
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0680-valid-palindrome-ii/README.md)

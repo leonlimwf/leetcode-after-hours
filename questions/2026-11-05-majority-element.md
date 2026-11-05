@@ -37,3 +37,5 @@ n == nums.length • 1 <= n <= 5 * 10^4 • -10^9 <= nums[i] <= 10^9 • The inp
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0169-majority-element/README.md)

@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-07 | 392 | [Is Subsequence](questions/2026-11-07-is-subsequence.md) | Easy | Two Pointers, String, Dynamic Programming | Assigned |
 | 2026-11-06 | 213 | [House Robber II](questions/2026-11-06-house-robber-ii.md) | Medium | Array, Dynamic Programming | Missed |
 | 2026-11-05 | 169 | [Majority Element](questions/2026-11-05-majority-element.md) | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting | Accepted |
 | 2026-11-04 | 268 | [Missing Number](questions/2026-11-04-missing-number.md) | Easy | Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting | Accepted |

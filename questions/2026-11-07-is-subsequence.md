@@ -37,3 +37,5 @@ Output  Return true if s is a subsequence of t; otherwise return false.
 What approach would you try first, and why?
 
 Try it before reading a solution. Write your approach and code in your private journal.
+
+[Archived solution and complexity](../solutions/0392-is-subsequence/README.md)

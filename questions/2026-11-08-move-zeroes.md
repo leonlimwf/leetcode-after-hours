@@ -6,7 +6,7 @@ Topics: Array / Two Pointers
 
 [Open on LeetCode](https://leetcode.com/problems/move-zeroes/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

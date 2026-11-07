@@ -1,11 +1,12 @@
 # Confirmed Completions
 
-**44 confirmed Accepted** · 18 Easy · 26 Medium · 0 Hard
+**45 confirmed Accepted** · 19 Easy · 26 Medium · 0 Hard
 
-This includes 43 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
+This includes 44 daily assignment completions and 1 additional accepted problem(s). Profile-only acceptance still awaits learner confirmation. Archived code is copied from the private journal; no private LeetCode submission source is fetched.
 
 | Accepted | # | Problem | Difficulty | Code / analysis |
 | --- | --- | --- | --- | --- |
+| Not recorded | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Not published yet |
 | 2026-11-05 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [Journal snapshot](solutions/0169-majority-element/README.md) |
 | 2026-11-04 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | [Journal snapshot](solutions/0268-missing-number/README.md) |
 | Not recorded | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | Easy | [Journal snapshot](solutions/0680-valid-palindrome-ii/README.md) |
@@ -67,4 +68,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
 - [House Robber II](questions/2026-11-06-house-robber-ii.md) — Missed
-- [Is Subsequence](questions/2026-11-07-is-subsequence.md) — Profile Accepted · pending confirmation
+- [Move Zeroes](questions/2026-11-08-move-zeroes.md) — Assigned

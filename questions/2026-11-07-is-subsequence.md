@@ -6,7 +6,7 @@ Topics: Two Pointers / String / Dynamic Programming
 
 [Open on LeetCode](https://leetcode.com/problems/is-subsequence/)
 
-Status: **Assigned**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

@@ -67,4 +67,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
 - [House Robber II](questions/2026-11-06-house-robber-ii.md) — Missed
-- [Is Subsequence](questions/2026-11-07-is-subsequence.md) — Assigned
+- [Is Subsequence](questions/2026-11-07-is-subsequence.md) — Profile Accepted · pending confirmation

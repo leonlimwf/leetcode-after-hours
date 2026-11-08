@@ -69,3 +69,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
 - [House Robber II](questions/2026-11-06-house-robber-ii.md) — Missed
 - [Move Zeroes](questions/2026-11-08-move-zeroes.md) — Missed
+- [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) — Assigned

@@ -6,7 +6,7 @@ Topics: Array / Two Pointers / Binary Search
 
 [Open on LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

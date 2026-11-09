@@ -70,4 +70,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [House Robber II](questions/2026-11-06-house-robber-ii.md) — Missed
 - [Move Zeroes](questions/2026-11-08-move-zeroes.md) — Missed
 - [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) — Assigned
-- [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) — Assigned
+- [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) — Missed

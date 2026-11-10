@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-11 | 122 | [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) | Medium | Array, Dynamic Programming, Greedy | Assigned |
 | 2026-11-10 | 167 | [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) | Medium | Array, Two Pointers, Binary Search | Missed |
 | 2026-11-09 | 88 | [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) | Easy | Array, Two Pointers, Sorting | Assigned |
 | 2026-11-08 | 283 | [Move Zeroes](questions/2026-11-08-move-zeroes.md) | Easy | Array, Two Pointers | Missed |

@@ -6,7 +6,7 @@ Topics: Array / Dynamic Programming / Greedy
 
 [Open on LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

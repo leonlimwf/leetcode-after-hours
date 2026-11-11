@@ -72,3 +72,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) — Assigned
 - [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) — Missed
 - [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) — Missed
+- [Coin Change](questions/2026-11-12-coin-change.md) — Assigned

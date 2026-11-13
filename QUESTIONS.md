@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-14 | 344 | [Reverse String](questions/2026-11-14-reverse-string.md) | Easy | Two Pointers, String | Assigned |
 | 2026-11-13 | 139 | [Word Break](questions/2026-11-13-word-break.md) | Medium | Array, Hash Table, String, Dynamic Programming, Trie, Memoization | Assigned |
 | 2026-11-12 | 322 | [Coin Change](questions/2026-11-12-coin-change.md) | Medium | Array, Dynamic Programming, Breadth-First Search | Assigned |
 | 2026-11-11 | 122 | [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) | Medium | Array, Dynamic Programming, Greedy | Missed |

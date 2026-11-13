@@ -74,3 +74,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) — Missed
 - [Coin Change](questions/2026-11-12-coin-change.md) — Assigned
 - [Word Break](questions/2026-11-13-word-break.md) — Assigned
+- [Reverse String](questions/2026-11-14-reverse-string.md) — Assigned

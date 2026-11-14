@@ -75,3 +75,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Coin Change](questions/2026-11-12-coin-change.md) — Assigned
 - [Word Break](questions/2026-11-13-word-break.md) — Assigned
 - [Reverse String](questions/2026-11-14-reverse-string.md) — Assigned
+- [Path Sum](questions/2026-11-15-path-sum.md) — Assigned

@@ -76,3 +76,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Word Break](questions/2026-11-13-word-break.md) — Assigned
 - [Reverse String](questions/2026-11-14-reverse-string.md) — Assigned
 - [Path Sum](questions/2026-11-15-path-sum.md) — Assigned
+- [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) — Assigned

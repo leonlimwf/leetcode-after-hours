@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | 26 | [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) | Easy | Array, Two Pointers | Assigned |
 | 2026-11-15 | 112 | [Path Sum](questions/2026-11-15-path-sum.md) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | Assigned |
 | 2026-11-14 | 344 | [Reverse String](questions/2026-11-14-reverse-string.md) | Easy | Two Pointers, String | Assigned |
 | 2026-11-13 | 139 | [Word Break](questions/2026-11-13-word-break.md) | Medium | Array, Hash Table, String, Dynamic Programming, Trie, Memoization | Assigned |

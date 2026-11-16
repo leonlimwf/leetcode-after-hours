@@ -77,3 +77,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Reverse String](questions/2026-11-14-reverse-string.md) — Assigned
 - [Path Sum](questions/2026-11-15-path-sum.md) — Assigned
 - [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) — Assigned
+- [Remove Nth Node From End of List](questions/2026-11-17-remove-nth-node-from-end-of-list.md) — Assigned

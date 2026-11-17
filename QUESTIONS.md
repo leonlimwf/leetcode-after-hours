@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-18 | 832 | [Flipping an Image](questions/2026-11-18-flipping-an-image.md) | Easy | Array, Two Pointers, Bit Manipulation, Matrix, Simulation | Assigned |
 | 2026-11-17 | 19 | [Remove Nth Node From End of List](questions/2026-11-17-remove-nth-node-from-end-of-list.md) | Medium | Linked List, Two Pointers | Assigned |
 | 2026-11-16 | 26 | [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) | Easy | Array, Two Pointers | Assigned |
 | 2026-11-15 | 112 | [Path Sum](questions/2026-11-15-path-sum.md) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | Assigned |

@@ -79,3 +79,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) — Assigned
 - [Remove Nth Node From End of List](questions/2026-11-17-remove-nth-node-from-end-of-list.md) — Assigned
 - [Flipping an Image](questions/2026-11-18-flipping-an-image.md) — Assigned
+- [Squares of a Sorted Array](questions/2026-11-19-squares-of-a-sorted-array.md) — Assigned

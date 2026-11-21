@@ -82,3 +82,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Squares of a Sorted Array](questions/2026-11-19-squares-of-a-sorted-array.md) — Assigned
 - [Single Number](questions/2026-11-20-single-number.md) — Assigned
 - [Isomorphic Strings](questions/2026-11-21-isomorphic-strings.md) — Assigned
+- [Ransom Note](questions/2026-11-22-ransom-note.md) — Assigned

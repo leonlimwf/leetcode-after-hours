@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-22 | 383 | [Ransom Note](questions/2026-11-22-ransom-note.md) | Easy | Hash Table, String, Counting | Assigned |
 | 2026-11-21 | 205 | [Isomorphic Strings](questions/2026-11-21-isomorphic-strings.md) | Easy | Hash Table, String | Assigned |
 | 2026-11-20 | 136 | [Single Number](questions/2026-11-20-single-number.md) | Easy | Array, Bit Manipulation | Assigned |
 | 2026-11-19 | 977 | [Squares of a Sorted Array](questions/2026-11-19-squares-of-a-sorted-array.md) | Easy | Array, Two Pointers, Sorting | Assigned |

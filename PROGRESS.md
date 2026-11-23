@@ -84,4 +84,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Isomorphic Strings](questions/2026-11-21-isomorphic-strings.md) — Assigned
 - [Ransom Note](questions/2026-11-22-ransom-note.md) — Assigned
 - [Roman to Integer](questions/2026-11-23-roman-to-integer.md) — Assigned
-- [Sqrt(x)](questions/2026-11-24-sqrtx.md) — Assigned
+- [Sqrt(x)](questions/2026-11-24-sqrtx.md) — Missed

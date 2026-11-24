@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-25 | 9 | [Palindrome Number](questions/2026-11-25-palindrome-number.md) | Easy | Math | Assigned |
 | 2026-11-24 | 69 | [Sqrt(x)](questions/2026-11-24-sqrtx.md) | Easy | Math, Binary Search, Newton's Method | Missed |
 | 2026-11-23 | 13 | [Roman to Integer](questions/2026-11-23-roman-to-integer.md) | Easy | Hash Table, Math, String | Assigned |
 | 2026-11-22 | 383 | [Ransom Note](questions/2026-11-22-ransom-note.md) | Easy | Hash Table, String, Counting | Assigned |

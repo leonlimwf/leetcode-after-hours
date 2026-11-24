@@ -6,7 +6,7 @@ Topics: Math
 
 [Open on LeetCode](https://leetcode.com/problems/palindrome-number/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

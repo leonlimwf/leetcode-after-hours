@@ -85,4 +85,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Ransom Note](questions/2026-11-22-ransom-note.md) — Assigned
 - [Roman to Integer](questions/2026-11-23-roman-to-integer.md) — Assigned
 - [Sqrt(x)](questions/2026-11-24-sqrtx.md) — Missed
-- [Palindrome Number](questions/2026-11-25-palindrome-number.md) — Assigned
+- [Palindrome Number](questions/2026-11-25-palindrome-number.md) — Missed

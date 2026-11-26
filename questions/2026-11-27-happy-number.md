@@ -6,7 +6,7 @@ Topics: Math / Hash Table / Two Pointers
 
 [Open on LeetCode](https://leetcode.com/problems/happy-number/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

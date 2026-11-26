@@ -87,4 +87,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Sqrt(x)](questions/2026-11-24-sqrtx.md) — Missed
 - [Palindrome Number](questions/2026-11-25-palindrome-number.md) — Missed
 - [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) — Assigned
-- [Happy Number](questions/2026-11-27-happy-number.md) — Assigned
+- [Happy Number](questions/2026-11-27-happy-number.md) — Missed

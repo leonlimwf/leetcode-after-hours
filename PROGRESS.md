@@ -68,13 +68,13 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Max Area of Island](questions/2026-11-01-max-area-of-island.md) — Assigned
 - [Flood Fill](questions/2026-11-02-flood-fill.md) — Missed
 - [House Robber II](questions/2026-11-06-house-robber-ii.md) — Missed
-- [Move Zeroes](questions/2026-11-08-move-zeroes.md) — Missed
+- [Move Zeroes](questions/2026-11-08-move-zeroes.md) — Profile Accepted · pending confirmation
 - [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) — Assigned
 - [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) — Missed
 - [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) — Missed
 - [Coin Change](questions/2026-11-12-coin-change.md) — Assigned
 - [Word Break](questions/2026-11-13-word-break.md) — Assigned
-- [Reverse String](questions/2026-11-14-reverse-string.md) — Assigned
+- [Reverse String](questions/2026-11-14-reverse-string.md) — Profile Accepted · pending confirmation
 - [Path Sum](questions/2026-11-15-path-sum.md) — Assigned
 - [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) — Assigned
 - [Remove Nth Node From End of List](questions/2026-11-17-remove-nth-node-from-end-of-list.md) — Assigned
@@ -87,3 +87,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Sqrt(x)](questions/2026-11-24-sqrtx.md) — Missed
 - [Palindrome Number](questions/2026-11-25-palindrome-number.md) — Missed
 - [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) — Assigned
+- [Happy Number](questions/2026-11-27-happy-number.md) — Assigned

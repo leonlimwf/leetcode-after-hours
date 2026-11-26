@@ -6,7 +6,7 @@ Topics: Two Pointers / String
 
 [Open on LeetCode](https://leetcode.com/problems/reverse-string/)
 
-Status: **Assigned**
+Status: **Profile Accepted · pending confirmation**
 
 ## Problem Statement
 

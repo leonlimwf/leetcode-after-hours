@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-27 | 202 | [Happy Number](questions/2026-11-27-happy-number.md) | Easy | Math, Hash Table, Two Pointers | Assigned |
 | 2026-11-26 | 994 | [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) | Medium | Array, Breadth-First Search, Matrix | Assigned |
 | 2026-11-25 | 9 | [Palindrome Number](questions/2026-11-25-palindrome-number.md) | Easy | Math | Missed |
 | 2026-11-24 | 69 | [Sqrt(x)](questions/2026-11-24-sqrtx.md) | Easy | Math, Binary Search, Newton's Method | Missed |
@@ -16,13 +17,13 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 | 2026-11-17 | 19 | [Remove Nth Node From End of List](questions/2026-11-17-remove-nth-node-from-end-of-list.md) | Medium | Linked List, Two Pointers | Assigned |
 | 2026-11-16 | 26 | [Remove Duplicates from Sorted Array](questions/2026-11-16-remove-duplicates-from-sorted-array.md) | Easy | Array, Two Pointers | Assigned |
 | 2026-11-15 | 112 | [Path Sum](questions/2026-11-15-path-sum.md) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | Assigned |
-| 2026-11-14 | 344 | [Reverse String](questions/2026-11-14-reverse-string.md) | Easy | Two Pointers, String | Assigned |
+| 2026-11-14 | 344 | [Reverse String](questions/2026-11-14-reverse-string.md) | Easy | Two Pointers, String | Profile Accepted · pending confirmation |
 | 2026-11-13 | 139 | [Word Break](questions/2026-11-13-word-break.md) | Medium | Array, Hash Table, String, Dynamic Programming, Trie, Memoization | Assigned |
 | 2026-11-12 | 322 | [Coin Change](questions/2026-11-12-coin-change.md) | Medium | Array, Dynamic Programming, Breadth-First Search | Assigned |
 | 2026-11-11 | 122 | [Best Time to Buy and Sell Stock II](questions/2026-11-11-best-time-to-buy-and-sell-stock-ii.md) | Medium | Array, Dynamic Programming, Greedy | Missed |
 | 2026-11-10 | 167 | [Two Sum II - Input Array Is Sorted](questions/2026-11-10-two-sum-ii-input-array-is-sorted.md) | Medium | Array, Two Pointers, Binary Search | Missed |
 | 2026-11-09 | 88 | [Merge Sorted Array](questions/2026-11-09-merge-sorted-array.md) | Easy | Array, Two Pointers, Sorting | Assigned |
-| 2026-11-08 | 283 | [Move Zeroes](questions/2026-11-08-move-zeroes.md) | Easy | Array, Two Pointers | Missed |
+| 2026-11-08 | 283 | [Move Zeroes](questions/2026-11-08-move-zeroes.md) | Easy | Array, Two Pointers | Profile Accepted · pending confirmation |
 | 2026-11-07 | 392 | [Is Subsequence](questions/2026-11-07-is-subsequence.md) | Easy | Two Pointers, String, Dynamic Programming | Accepted |
 | 2026-11-06 | 213 | [House Robber II](questions/2026-11-06-house-robber-ii.md) | Medium | Array, Dynamic Programming | Missed |
 | 2026-11-05 | 169 | [Majority Element](questions/2026-11-05-majority-element.md) | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting | Accepted |

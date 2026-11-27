@@ -4,6 +4,7 @@ Fresh assignments selected by ChatGPT. All dates use Asia/Singapore.
 
 | Assigned | # | Problem | Difficulty | Topics | Status |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-28 | 234 | [Palindrome Linked List](questions/2026-11-28-palindrome-linked-list.md) | Easy | Linked List, Two Pointers, Stack, Recursion | Assigned |
 | 2026-11-27 | 202 | [Happy Number](questions/2026-11-27-happy-number.md) | Easy | Math, Hash Table, Two Pointers | Missed |
 | 2026-11-26 | 994 | [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) | Medium | Array, Breadth-First Search, Matrix | Assigned |
 | 2026-11-25 | 9 | [Palindrome Number](questions/2026-11-25-palindrome-number.md) | Easy | Math | Missed |

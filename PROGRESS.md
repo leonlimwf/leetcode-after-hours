@@ -88,4 +88,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Palindrome Number](questions/2026-11-25-palindrome-number.md) — Missed
 - [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) — Assigned
 - [Happy Number](questions/2026-11-27-happy-number.md) — Missed
-- [Palindrome Linked List](questions/2026-11-28-palindrome-linked-list.md) — Assigned
+- [Palindrome Linked List](questions/2026-11-28-palindrome-linked-list.md) — Missed

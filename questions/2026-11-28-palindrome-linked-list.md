@@ -6,7 +6,7 @@ Topics: Linked List / Two Pointers / Stack / Recursion
 
 [Open on LeetCode](https://leetcode.com/problems/palindrome-linked-list/)
 
-Status: **Assigned**
+Status: **Missed**
 
 ## Problem Statement
 

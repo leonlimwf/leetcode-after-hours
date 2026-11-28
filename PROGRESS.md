@@ -89,3 +89,4 @@ These are user-confirmed completions outside the daily assignment pages. No code
 - [Rotting Oranges](questions/2026-11-26-rotting-oranges.md) — Assigned
 - [Happy Number](questions/2026-11-27-happy-number.md) — Missed
 - [Palindrome Linked List](questions/2026-11-28-palindrome-linked-list.md) — Missed
+- [First Unique Character in a String](questions/2026-11-29-first-unique-character-in-a-string.md) — Assigned
